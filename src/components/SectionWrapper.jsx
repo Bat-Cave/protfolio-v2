@@ -1,8 +1,8 @@
 const SectionWrapper = ({ fullWidth, children }) => {
   return (
-    <div className={fullWidth ? "mx-auto" : "max-w-7xl mx-auto"}>
+    <section className={fullWidth ? "mx-auto" : "max-w-7xl mx-auto px-3"}>
       {children}
-    </div>
+    </section>
   );
 };
 

@@ -10,10 +10,13 @@
   },
   "dependencies": {
     "daisyui": "^2.31.0",
+    "framer-motion": "^7.5.3",
+    "iconoir": "^5.3.1",
+    "iconoir-react": "^5.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.2",
-    "react-tsparticles": "^2.3.3",
+    "react-use-smooth-scroll": "^1.0.0",
     "tailwindcss": "^3.1.8"
   },
   "devDependencies": {
