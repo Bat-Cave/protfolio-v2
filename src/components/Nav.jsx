@@ -1,7 +1,8 @@
-import { Menu } from "iconoir-react";
+import { ReactComponent as Menu } from "../assets/menu.svg";
 import { Link, useLocation } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
-import moon from "../assets/moon.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import moon from "../assets/moon.webp";
 
 const Nav = () => {
   const { scrollY } = useScroll();
@@ -28,15 +29,23 @@ const Nav = () => {
           Rico Hancock
         </a>
       </div>
-      <motion.img
+      <motion.div
         src={moon}
         style={{ transform }}
-        className="w-20 absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%]"
-      />
+        className="w-20 absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] fade-in"
+      >
+        <LazyLoadImage
+          src={moon}
+          alt="Moon"
+          width={80}
+          height={80}
+          effect="opacity"
+        />
+      </motion.div>
       <div className="flex-none">
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost rounded-btn">
-            <Menu />
+            <Menu width={24} height={24} />
           </label>
           <ul
             tabIndex={0}

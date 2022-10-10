@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { GitHub, LinkedIn } from "iconoir-react";
+import { ReactComponent as LinkedIn } from "../assets/linkedin.svg";
+import { ReactComponent as GitHub } from "../assets/github.svg";
 import { ReactComponent as Codewars } from "../assets/codewars_icon.svg";
 import { ReactComponent as CssBattle } from "../assets/cssbattle_icon.svg";
 
@@ -59,7 +60,7 @@ const Footer = () => {
                     target="_blank"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
-                    <GitHub /> Github
+                    <GitHub width={24} height={24} /> Github
                   </a>
                 </li>
                 <li>
@@ -68,7 +69,7 @@ const Footer = () => {
                     target="_blank"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
-                    <LinkedIn /> Linkedin
+                    <LinkedIn width={24} height={24} /> Linkedin
                   </a>
                 </li>
                 <li>
@@ -77,7 +78,7 @@ const Footer = () => {
                     target="_blank"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
-                    <Codewars className="w-5" />
+                    <Codewars width={24} height={24} />
                     Codewars
                   </a>
                 </li>
@@ -87,7 +88,7 @@ const Footer = () => {
                     target="_blank"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
-                    <CssBattle className="w-5" /> CSSBattle
+                    <CssBattle width={24} height={24} /> CSSBattle
                   </a>
                 </li>
               </ul>
@@ -105,7 +106,7 @@ const Footer = () => {
                     target="_blank"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
-                    <GitHub /> Github
+                    <GitHub width={24} height={24} /> Github
                   </a>
                 </li>
                 <li>
@@ -114,7 +115,7 @@ const Footer = () => {
                     target="_blank"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
-                    <LinkedIn /> Linkedin
+                    <LinkedIn width={24} height={24} /> Linkedin
                   </a>
                 </li>
                 <li>

@@ -29,14 +29,24 @@ const Hero = () => {
         >
           Always learning
         </motion.h1>
-        <div className="relative mt-4">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, delay: 1.5 }}
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          className="relative mt-4"
+        >
           <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div className="mockup-code bg-base-300 text-secondary">
             <pre data-prefix="$">
               <code>because technology does not stop</code>
             </pre>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

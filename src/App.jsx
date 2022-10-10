@@ -5,6 +5,7 @@ import Layout from "./components/Layout";
 import FourOFour from "./pages/404";
 import Home from "./pages/Home";
 import PortfolioContributions from "./pages/PortfolioContributions";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 function App() {
   return (
