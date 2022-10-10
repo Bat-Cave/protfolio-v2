@@ -1,7 +1,16 @@
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 const Hero = () => {
   return (
     <div className="relative w-full h-screen group ">
+      <Helmet>
+        <script
+          data-who="💎 Made with naker.io 💎"
+          src="https://d23jutsnau9x47.cloudfront.net/back/v1.0.9/viewer.js"
+          data-option="{|environment|:{|gradient|:|radial|,|sensitivity|:0.06,|colorStart|:[33,34,44,0],|colorEnd|:[255,46,164,0]},|particle|:{|life|:5,|power|:0.003,|texture|:|https://res.cloudinary.com/naker-io/image/upload/v1566560053/circle_05.png|,|number|:1604,|colorStart|:[116,129,92,0.13],|colorEnd|:[255,255,255,0.52],|sizeStart|:0.18,|sizeEnd|:0.36,|direction1|:{|x|:0,|y|:0,|z|:0},|direction2|:{|x|:0,|y|:0,|z|:0}},|waterMark|:false}"
+          data-container="naker-destination"
+        ></script>
+      </Helmet>
       <div className="absolute w-full h-[calc(100vh+4.75rem)] translate-y-[-4.75rem] shadow-bottom-inner z-10"></div>
       <div
         id="naker-destination"

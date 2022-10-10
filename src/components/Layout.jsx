@@ -1,10 +1,12 @@
+import Footer from "./Footer";
 import Nav from "./Nav";
 
 const Layout = ({ children }) => {
   return (
-    <main className="w-full h-screen bg-transparent text-base-content pt-3 max-h-screen">
+    <main className="relative w-full bg-transparent text-base-content pt-3">
       <Nav />
-      {children}
+      <div className="min-h-[calc(100vh-410px)]">{children}</div>
+      <Footer />
     </main>
   );
 };
