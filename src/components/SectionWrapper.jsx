@@ -2,7 +2,7 @@ const SectionWrapper = ({ fullWidth, children }) => {
   return (
     <section
       className={
-        fullWidth ? "mx-auto" : "max-w-7xl mx-auto py-16 px-3 lg:px-12"
+        fullWidth ? "mx-auto" : "max-w-7xl mx-auto py-8 lg:py-16 px-3 lg:px-12"
       }
     >
       {children}

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { m } from "framer-motion";
 // import { ReactComponent as LinkedIn } from "../assets/linkedin.svg";
 // import { ReactComponent as GitHub } from "../assets/github.svg";
@@ -27,9 +28,12 @@ const Footer = () => {
             <nav className="list-none mb-10">
               <ul className="menu menu-compact w-full p-2 rounded-box">
                 <li>
-                  {/* <a className="text-secondary-content hover:text-secondary hover:bg-neutral">
-                    First Link
-                  </a> */}
+                  <Link
+                    to="/portfolio-contributions"
+                    className="text-secondary-content hover:text-secondary hover:bg-neutral"
+                  >
+                    Contributions
+                  </Link>
                 </li>
                 <li>
                   {/* <a className="text-secondary-content hover:text-secondary hover:bg-neutral">

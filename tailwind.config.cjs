@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       boxShadow: {
         "bottom-inner": "inset 0 -15rem 30rem 5rem rgba(33,34,44,1)",
+        "bottom-inner-small": "inset 0 -4rem 2rem -1rem  rgba(33,34,44,1)",
       },
       animation: {
         "fade-in": "fade-in 1s ease 1",
@@ -16,6 +17,7 @@ module.exports = {
         },
       },
       screens: {
+        "2xs": "375px",
         xs: "420px",
       },
     },

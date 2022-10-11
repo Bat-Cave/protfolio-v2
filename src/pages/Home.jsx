@@ -40,7 +40,7 @@ const Home = () => {
               </div>
             </div>
             <div className="flex flex-col justify-center items-center flex-wrap lg:w-1/2 lg:text-left text-center">
-              <h2 className="text-9xl gradient-text font-bold font-serif py-4">
+              <h2 className="text-6xl lg:text-9xl gradient-text font-bold font-serif py-4">
                 Howdy
               </h2>
               <div className="card w-96 bg-neutral shadow-xl mt-8">

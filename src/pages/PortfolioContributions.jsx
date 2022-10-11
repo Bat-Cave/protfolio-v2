@@ -65,7 +65,7 @@ const PortfolioContributions = () => {
         <h2 className="text-2xl mb-4 stat-value">Core Technologies</h2>
         <table
           className="w-full table table-zebra table-compact border-secondary-focus border-2 rounded-xl border-separate shadow-md shadow-secondary-focus overflow-hidden"
-          cellspacing={0}
+          cellSpacing={0}
         >
           <thead>
             <tr>
@@ -79,7 +79,7 @@ const PortfolioContributions = () => {
           <tbody>
             {technologies.map((t, i) => {
               return (
-                <tr>
+                <tr key={`core-technology-${i}`}>
                   <td className="w-4/12 pl-3 md:pl-4">
                     <a
                       href={t.url}

@@ -12,10 +12,10 @@ const Hero = () => {
           data-container="naker-destination"
         ></script>
       </Helmet>
-      <div className="absolute w-full h-[calc(100vh+4.75rem)] translate-y-[-4.75rem] shadow-bottom-inner z-10"></div>
+      <div className="absolute bottom-0 top-unset lg:bottom-unset lg:top-0 w-full h-[4.756rem] lg:h-[calc(100vh+4.75rem)] translate-y-[0.1rem] lg:translate-y-[-4.75rem] shadow-bottom-inner-small lg:shadow-bottom-inner z-10 overflow-hidden"></div>
       <div
         id="naker-destination"
-        className="absolute w-full h-[calc(100vh+4.75rem)] flex justify-center items-center flex-col z-0 translate-y-[-4.75rem] bg-[#343746] pb-52 px-7"
+        className="absolute w-full h-[calc(100vh+4.75rem)] flex pt-36 lg:pt-0 lg:justify-center items-center flex-col z-0 translate-y-[-4.75rem] bg-[#343746] pb-52 px-7"
       >
         <m.h1
           initial="hidden"
@@ -26,7 +26,7 @@ const Hero = () => {
             visible: { opacity: 1 },
             hidden: { opacity: 0 },
           }}
-          className="text-9xl font-bold gradient-text uppercase font-serif text-center"
+          className="mb-12 text-5xl md:text-7xl lg:text-9xl font-bold gradient-text uppercase font-serif text-center z-50"
         >
           Always learning
         </m.h1>
@@ -42,9 +42,11 @@ const Hero = () => {
           className="relative mt-4"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <div className="mockup-code bg-base-300 text-secondary">
+          <div className="mockup-code bg-base-300 text-secondary w-full">
             <pre data-prefix="$">
-              <code>because technology does not stop</code>
+              <code className="sm:text-normal">
+                because technology does not stop
+              </code>
             </pre>
           </div>
         </m.div>
