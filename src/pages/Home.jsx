@@ -1,8 +1,9 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Hero from "../components/Hero";
 import ricoAsCat from "../assets/rico-as-cat-4-cropped.webp";
 import SectionWrapper from "../components/SectionWrapper";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+// import { ReactComponent as GitHub } from "../assets/github.svg";
 import { GitHub } from "iconoir-react";
 
 //<a href="https://iconscout.com/3ds/moon" target="_blank">Moon 3D Illustration</a> by <a href="https://iconscout.com/contributors/iqonic-design">iqonic.design</a> on <a href="https://iconscout.com">IconScout</a>
@@ -13,7 +14,7 @@ const Home = () => {
       <Hero />
       <div className="bg-[#21222C] pb-96">
         <SectionWrapper>
-          <motion.div
+          <m.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -62,7 +63,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </m.div>
         </SectionWrapper>
       </div>
     </SectionWrapper>

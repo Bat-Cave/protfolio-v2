@@ -1,7 +1,8 @@
-import { ReactComponent as Menu } from "../assets/menu.svg";
 import { Link, useLocation } from "react-router-dom";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+// import { ReactComponent as Menu } from "../assets/menu.svg";
+import { Menu } from "iconoir-react";
 import moon from "../assets/moon.webp";
 
 const Nav = () => {
@@ -29,7 +30,7 @@ const Nav = () => {
           Rico Hancock
         </a>
       </div>
-      <motion.div
+      <m.div
         src={moon}
         style={{ transform }}
         className="w-20 absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] fade-in"
@@ -41,7 +42,7 @@ const Nav = () => {
           height={80}
           effect="opacity"
         />
-      </motion.div>
+      </m.div>
       <div className="flex-none">
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost rounded-btn">
@@ -52,10 +53,10 @@ const Nav = () => {
             className="menu dropdown-content p-2 shadow bg-neutral rounded-box w-52 mt-4"
           >
             <li>
-              <a>Item 1</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a>Item 2</a>
+              <Link to="/portfolio-contributions">Contributions</Link>
             </li>
           </ul>
         </div>

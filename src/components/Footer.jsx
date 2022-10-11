@@ -1,13 +1,14 @@
-import { motion } from "framer-motion";
-import { ReactComponent as LinkedIn } from "../assets/linkedin.svg";
-import { ReactComponent as GitHub } from "../assets/github.svg";
+import { m } from "framer-motion";
+// import { ReactComponent as LinkedIn } from "../assets/linkedin.svg";
+// import { ReactComponent as GitHub } from "../assets/github.svg";
+import { LinkedIn, GitHub } from "iconoir-react";
 import { ReactComponent as Codewars } from "../assets/codewars_icon.svg";
 import { ReactComponent as CssBattle } from "../assets/cssbattle_icon.svg";
 
 const Footer = () => {
   return (
     <footer className="text-secondary-content body-font bg-gradient-to-br from-secondary-focus via-secondary-focus to-primary-focus">
-      <motion.div
+      <m.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -26,24 +27,24 @@ const Footer = () => {
             <nav className="list-none mb-10">
               <ul className="menu menu-compact w-full p-2 rounded-box">
                 <li>
-                  <a className="text-secondary-content hover:text-secondary hover:bg-neutral">
+                  {/* <a className="text-secondary-content hover:text-secondary hover:bg-neutral">
                     First Link
-                  </a>
+                  </a> */}
                 </li>
                 <li>
-                  <a className="text-secondary-content hover:text-secondary hover:bg-neutral">
+                  {/* <a className="text-secondary-content hover:text-secondary hover:bg-neutral">
                     Second Link
-                  </a>
+                  </a> */}
                 </li>
                 <li>
-                  <a className="text-secondary-content hover:text-secondary hover:bg-neutral">
+                  {/* <a className="text-secondary-content hover:text-secondary hover:bg-neutral">
                     Third Link
-                  </a>
+                  </a> */}
                 </li>
                 <li>
-                  <a className="text-secondary-content hover:text-secondary hover:bg-neutral">
+                  {/* <a className="text-secondary-content hover:text-secondary hover:bg-neutral">
                     Fourth Link
-                  </a>
+                  </a> */}
                 </li>
               </ul>
             </nav>
@@ -119,14 +120,14 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="text-secondary-content hover:text-secondary hover:bg-neutral">
+                  {/* <a className="text-secondary-content hover:text-secondary hover:bg-neutral">
                     Third Link
-                  </a>
+                  </a> */}
                 </li>
                 <li>
-                  <a className="text-secondary-content hover:text-secondary hover:bg-neutral">
+                  {/* <a className="text-secondary-content hover:text-secondary hover:bg-neutral">
                     Fourth Link
-                  </a>
+                  </a> */}
                 </li>
               </ul>
             </nav>
@@ -161,7 +162,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-      </motion.div>
+      </m.div>
     </footer>
   );
 };

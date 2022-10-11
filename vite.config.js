@@ -5,5 +5,10 @@ import viteCompression from "vite-plugin-compression";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [svgr(), react(), viteCompression()],
+  build: {},
+  plugins: [
+    svgr(),
+    react(),
+    viteCompression({ filter: /\.(jsx|mjs|json|css|html)$/i }),
+  ],
 });

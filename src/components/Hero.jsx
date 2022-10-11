@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 const Hero = () => {
   return (
@@ -6,7 +6,8 @@ const Hero = () => {
       <Helmet>
         <script
           data-who="💎 Made with naker.io 💎"
-          src="https://d23jutsnau9x47.cloudfront.net/back/v1.0.9/viewer.js"
+          src="../scripts/nakerViewer.js"
+          // src="https://d23jutsnau9x47.cloudfront.net/back/v1.0.9/viewer.js"
           data-option="{|environment|:{|gradient|:|radial|,|sensitivity|:0.06,|colorStart|:[33,34,44,0],|colorEnd|:[255,46,164,0]},|particle|:{|life|:5,|power|:0.003,|texture|:|https://res.cloudinary.com/naker-io/image/upload/v1566560053/circle_05.png|,|number|:1604,|colorStart|:[116,129,92,0.13],|colorEnd|:[255,255,255,0.52],|sizeStart|:0.18,|sizeEnd|:0.36,|direction1|:{|x|:0,|y|:0,|z|:0},|direction2|:{|x|:0,|y|:0,|z|:0}},|waterMark|:false}"
           data-container="naker-destination"
         ></script>
@@ -16,7 +17,7 @@ const Hero = () => {
         id="naker-destination"
         className="absolute w-full h-[calc(100vh+4.75rem)] flex justify-center items-center flex-col z-0 translate-y-[-4.75rem] bg-[#343746] pb-52 px-7"
       >
-        <motion.h1
+        <m.h1
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -28,8 +29,8 @@ const Hero = () => {
           className="text-9xl font-bold gradient-text uppercase font-serif text-center"
         >
           Always learning
-        </motion.h1>
-        <motion.div
+        </m.h1>
+        <m.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -46,7 +47,7 @@ const Hero = () => {
               <code>because technology does not stop</code>
             </pre>
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </div>
   );

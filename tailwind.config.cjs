@@ -15,6 +15,9 @@ module.exports = {
           "100%": { opacity: "1" },
         },
       },
+      screens: {
+        xs: "420px",
+      },
     },
   },
   plugins: [require("daisyui")],
