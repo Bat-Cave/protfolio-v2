@@ -1,12 +1,11 @@
+import { useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { m, useScroll, useTransform } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-// import { ReactComponent as Menu } from "../assets/menu.svg";
-import { CodeBracketsSquare, HomeSimpleDoor, Menu } from "iconoir-react";
-import moon from "../assets/moon.webp";
+import { Code, HomeSimpleDoor, Menu } from "iconoir-react";
 import useWindowSize from "../hooks/useWindowSize";
-import { useRef } from "react";
 import useOnClickOutside from "../hooks/useOnClickOutside";
+import moon from "../assets/moon.webp";
 
 const Nav = () => {
   const dropdownRef = useRef();
@@ -29,12 +28,16 @@ const Nav = () => {
     ]
   );
 
-  const toggleMenu = (e) => {
+  const toggleMenu = () => {
     dropdownRef.current.classList.toggle("dropdown-open");
     document.activeElement.blur();
   };
+  const closeMenu = () => {
+    dropdownRef.current.classList.remove("dropdown-open");
+    document.activeElement.blur();
+  };
 
-  onClickOutside(dropdownRef, toggleMenu);
+  onClickOutside(dropdownRef, closeMenu);
 
   return (
     <nav className="navbar bg-neutral rounded-2xl z-20 sticky top-3 mx-auto w-[calc(100vw-30px)] lg:w-[calc(100vw-4.5rem)] max-w-7xl shadow-md shadow-base-300">
@@ -85,12 +88,8 @@ const Nav = () => {
             </li>
             <li>
               <Link to="/site-technology">
-                <CodeBracketsSquare
-                  width={24}
-                  height={24}
-                  className="text-info"
-                />{" "}
-                Site Technology
+                <Code width={24} height={24} className="text-info" /> Site
+                Technology
               </Link>
             </li>
           </ul>
