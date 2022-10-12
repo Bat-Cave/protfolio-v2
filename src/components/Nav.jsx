@@ -2,12 +2,16 @@ import { Link, useLocation } from "react-router-dom";
 import { m, useScroll, useTransform } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 // import { ReactComponent as Menu } from "../assets/menu.svg";
-import { Menu } from "iconoir-react";
+import { CodeBracketsSquare, HomeSimpleDoor, Menu } from "iconoir-react";
 import moon from "../assets/moon.webp";
 import useWindowSize from "../hooks/useWindowSize";
+import { useRef } from "react";
+import useOnClickOutside from "../hooks/useOnClickOutside";
 
 const Nav = () => {
+  const dropdownRef = useRef();
   const { width } = useWindowSize();
+  const onClickOutside = useOnClickOutside();
   const { scrollY } = useScroll();
   const { pathname } = useLocation();
   const isHome = pathname === "/";
@@ -25,7 +29,12 @@ const Nav = () => {
     ]
   );
 
-  console.log({ width });
+  const toggleMenu = (e) => {
+    dropdownRef.current.classList.toggle("dropdown-open");
+    document.activeElement.blur();
+  };
+
+  onClickOutside(dropdownRef, toggleMenu);
 
   return (
     <nav className="navbar bg-neutral rounded-2xl z-20 sticky top-3 mx-auto w-[calc(100vw-30px)] lg:w-[calc(100vw-4.5rem)] max-w-7xl shadow-md shadow-base-300">
@@ -52,19 +61,37 @@ const Nav = () => {
         />
       </m.div>
       <div className="flex-none">
-        <div className="dropdown lg:dropdown-end">
+        <div
+          ref={dropdownRef}
+          onClick={toggleMenu}
+          className="dropdown lg:dropdown-end"
+        >
           <label tabIndex={0} className="btn btn-ghost rounded-btn">
             <Menu width={24} height={24} />
           </label>
           <ul
             tabIndex={0}
-            className="menu dropdown-content p-2 shadow bg-neutral rounded-box w-52 mt-4"
+            className="menu shadow-md dropdown-content p-2 bg-neutral rounded-box w-52 mt-4"
           >
             <li>
-              <a href="/">Home</a>
+              <a href="/">
+                <HomeSimpleDoor
+                  width={24}
+                  height={24}
+                  className="text-secondary"
+                />{" "}
+                Home
+              </a>
             </li>
             <li>
-              <Link to="/portfolio-contributions">Contributions</Link>
+              <Link to="/site-technology">
+                <CodeBracketsSquare
+                  width={24}
+                  height={24}
+                  className="text-info"
+                />{" "}
+                Site Technology
+              </Link>
             </li>
           </ul>
         </div>

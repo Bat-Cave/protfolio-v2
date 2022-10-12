@@ -3,6 +3,10 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        nunito: ["Nunito", "sans-serif"],
+        philosopher: ["Philosopher", "sans-serif"],
+      },
       boxShadow: {
         "bottom-inner": "inset 0 -15rem 30rem 5rem rgba(33,34,44,1)",
         "bottom-inner-small": "inset 0 -4rem 2rem -1rem  rgba(33,34,44,1)",

@@ -29,10 +29,10 @@ const Footer = () => {
               <ul className="menu menu-compact w-full p-2 rounded-box">
                 <li>
                   <Link
-                    to="/portfolio-contributions"
+                    to="/site-technology"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
-                    Contributions
+                    Site Technology
                   </Link>
                 </li>
                 <li>

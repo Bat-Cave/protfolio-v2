@@ -26,7 +26,7 @@ const Hero = () => {
             visible: { opacity: 1 },
             hidden: { opacity: 0 },
           }}
-          className="mb-12 text-5xl md:text-7xl lg:text-9xl font-bold gradient-text uppercase font-serif text-center z-50"
+          className="mb-12 text-5xl md:text-7xl lg:text-9xl font-bold gradient-text uppercase font-serif text-center z-50 font-philosopher"
         >
           Always learning
         </m.h1>
@@ -39,14 +39,20 @@ const Hero = () => {
             visible: { opacity: 1 },
             hidden: { opacity: 0 },
           }}
-          className="relative mt-4"
+          className="relative mt-4 flex w-full min-w-[150px] max-w-[30rem] md:min-w-[18rem]"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <div className="mockup-code bg-base-300 text-secondary w-full">
-            <pre data-prefix="$">
-              <code className="sm:text-normal">
+          <div className="mockup-code bg-base-300 text-secondary w-full min-w-[150px]">
+            <pre data-prefix="$" className="hidden md:block">
+              <code className="text-xs xs:text-lg">
                 because technology does not stop
               </code>
+            </pre>
+            <pre data-prefix="$" className="block md:hidden">
+              <code className="text-xs xs:text-lg">because technology</code>
+            </pre>
+            <pre data-prefix="$" className="block md:hidden">
+              <code className="text-xs xs:text-lg">does not stop</code>
             </pre>
           </div>
         </m.div>

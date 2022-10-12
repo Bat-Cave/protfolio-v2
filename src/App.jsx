@@ -5,7 +5,7 @@ import { UseEffectScroll } from "react-use-smooth-scroll";
 import Layout from "./components/Layout";
 import FourOFour from "./pages/404";
 import Home from "./pages/Home";
-import PortfolioContributions from "./pages/PortfolioContributions";
+import SiteTechnology from "./pages/SiteTechnology";
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} errorElement={<FourOFour />} />
               <Route
-                path="/portfolio-contributions"
-                element={<PortfolioContributions />}
+                path="/site-technology"
+                element={<SiteTechnology />}
                 errorElement={<FourOFour />}
               />
             </Routes>

@@ -5,8 +5,9 @@ import tailwind from "../assets/tailwindcss.svg";
 import framer from "../assets/framer-motion.svg";
 import netlify from "../assets/netlify.svg";
 import daisyui from "../assets/daisyui.webp";
+import iconoir from "../assets/iconoir.webp";
 
-const PortfolioContributions = () => {
+const SiteTechnology = () => {
   const technologies = [
     {
       name: "Vite",
@@ -52,6 +53,13 @@ const PortfolioContributions = () => {
       description: "A Tailwind CSS component library",
       version: "2.31.0",
     },
+    {
+      name: "Iconoir",
+      logo: iconoir,
+      url: "https://iconoir.com/",
+      description: "One of the biggest open source icons libraries.",
+      version: "5.3.1",
+    },
   ];
 
   return (
@@ -87,7 +95,7 @@ const PortfolioContributions = () => {
                       className="flex items-center space-x-3"
                     >
                       <div
-                        className="tooltip tooltip-right"
+                        className="tooltip tooltip-right tooltip-secondary"
                         data-tip={`${t.name}`}
                       >
                         <img
@@ -122,4 +130,4 @@ const PortfolioContributions = () => {
   );
 };
 
-export default PortfolioContributions;
+export default SiteTechnology;
