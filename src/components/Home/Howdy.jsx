@@ -74,8 +74,8 @@ const Howdy = () => {
   ];
 
   return (
-    <div className="bg-[#21222C] pb-96">
-      <SectionWrapper>
+    <SectionWrapper>
+      <div className="bg-base-300">
         <m.div
           initial="hidden"
           whileInView="visible"
@@ -139,8 +139,8 @@ const Howdy = () => {
             </Card>
           </div>
         </m.div>
-      </SectionWrapper>
-    </div>
+      </div>
+    </SectionWrapper>
   );
 };
 
