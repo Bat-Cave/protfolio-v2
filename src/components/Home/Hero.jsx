@@ -12,11 +12,7 @@ const Hero = () => {
           data-container="naker-destination"
         ></script>
       </Helmet>
-      <div className="absolute bottom-0 top-unset lg:bottom-unset lg:top-0 w-full h-[4.756rem] lg:h-[calc(100vh+4.75rem)] translate-y-[0.1rem] lg:translate-y-[-4.75rem] shadow-bottom-inner-small lg:shadow-bottom-inner z-10 overflow-hidden"></div>
-      <div
-        id="naker-destination"
-        className="absolute w-full h-[calc(100vh+4.75rem)] flex pt-36 lg:pt-0 lg:justify-center items-center flex-col z-0 translate-y-[-4.75rem] bg-[#343746] pb-52 px-7"
-      >
+      <div className="absolute bottom-0 top-unset lg:bottom-unset lg:top-0 w-full h-[4.756rem] lg:h-[calc(100vh+4.75rem)] translate-y-[0.1rem] lg:translate-y-[-4.75rem] shadow-bottom-inner-small lg:shadow-bottom-inner z-10 overflow-hidden flex pt-48 items-center flex-col">
         <m.h1
           initial="hidden"
           whileInView="visible"
@@ -57,6 +53,10 @@ const Hero = () => {
           </div>
         </m.div>
       </div>
+      <div
+        id="naker-destination"
+        className="absolute w-full h-[calc(100vh+4.75rem)] flex pt-36 lg:pt-0 lg:justify-center items-center flex-col z-0 translate-y-[-4.75rem] bg-[#343746] pb-52 px-7"
+      ></div>
     </div>
   );
 };
