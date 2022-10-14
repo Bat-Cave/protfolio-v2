@@ -13,6 +13,8 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import Card from "../components/Card";
 
 const SiteTechnology = () => {
+  //todo: <a href="https://www.flaticon.com/free-icons/python" title="python icons">Python icons created by Freepik - Flaticon</a>
+
   const coreTechnologies = [
     {
       name: "Vite",
