@@ -3,9 +3,9 @@ import Nav from "./Nav";
 
 const Layout = ({ children }) => {
   return (
-    <main className="relative w-full bg-transparent text-base-content pt-3">
+    <main className="relative w-full bg-base-300 text-base-content pt-3">
       <Nav />
-      <div className="min-h-[calc(100vh-410px)] bg-base-300">{children}</div>
+      <div className="min-h-[calc(100vh-410px)] bg-transparent">{children}</div>
       <Footer />
     </main>
   );
