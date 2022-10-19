@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { m, useScroll, useTransform } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { Code, HomeSimpleDoor, Menu } from "iconoir-react";
+import { Code, HomeSimpleDoor, Menu, StarOutline } from "iconoir-react";
 import useWindowSize from "../hooks/useWindowSize";
 import useOnClickOutside from "../hooks/useOnClickOutside";
 import moon from "../assets/moon.webp";
@@ -85,6 +85,12 @@ const Nav = () => {
                 />{" "}
                 Home
               </a>
+            </li>
+            <li>
+              <Link to="/favorites">
+                <StarOutline width={24} height={24} className="text-accent" />{" "}
+                Favorites
+              </Link>
             </li>
             <li>
               <Link to="/site-technology">

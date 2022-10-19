@@ -116,8 +116,8 @@ const TechJourney = () => {
           {getLanguageBadge("react", "small")}. By the end of the bootcamp, I
           had built a full-stack application with a clean UI, Authentication,
           and Data Visualization. The app was called <i>Nutrification</i> and
-          allowed keep track of the micro and macro nutrients you ate using an
-          API to grab food information.
+          allowed users to keep track of the micro and macro nutrients you ate
+          using an API to grab food information.
         </p>
       ),
     },

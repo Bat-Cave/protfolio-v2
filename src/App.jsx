@@ -3,9 +3,10 @@ import { HelmetProvider } from "react-helmet-async";
 import { Routes, Route } from "react-router-dom";
 import { UseEffectScroll } from "react-use-smooth-scroll";
 import Layout from "./components/Layout";
-import FourOFour from "./pages/404";
 import Home from "./pages/Home";
+import Favorites from "./pages/Favorites";
 import SiteTechnology from "./pages/SiteTechnology";
+import FourOFour from "./pages/404";
 
 function App() {
   return (
@@ -18,6 +19,11 @@ function App() {
               <Route
                 path="/site-technology"
                 element={<SiteTechnology />}
+                errorElement={<FourOFour />}
+              />
+              <Route
+                path="/favorites"
+                element={<Favorites />}
                 errorElement={<FourOFour />}
               />
             </Routes>
