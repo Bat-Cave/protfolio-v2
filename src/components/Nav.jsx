@@ -87,9 +87,9 @@ const Nav = () => {
               </a>
             </li>
             <li>
-              <Link to="/favorites">
+              <Link to="/heroes">
                 <StarOutline width={24} height={24} className="text-accent" />{" "}
-                Favorites
+                Web Dev Heroes
               </Link>
             </li>
             <li>

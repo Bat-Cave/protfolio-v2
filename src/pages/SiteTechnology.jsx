@@ -14,6 +14,7 @@ import Card from "../components/Card";
 
 const SiteTechnology = () => {
   //todo: <a href="https://www.flaticon.com/free-icons/python" title="python icons">Python icons created by Freepik - Flaticon</a>
+  //todo: <a href="https://iconscout.com/3ds/launch" target="_blank">Launch 3D Illustration</a> by <a href="https://iconscout.com/contributors/akshaysalekar" target="_blank">Akshay Salekar</a>
 
   const coreTechnologies = [
     {

@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import { UseEffectScroll } from "react-use-smooth-scroll";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
-import Favorites from "./pages/Favorites";
+import WebDevHeroes from "./pages/WebDevHeroes";
 import SiteTechnology from "./pages/SiteTechnology";
 import FourOFour from "./pages/404";
 
@@ -22,10 +22,11 @@ function App() {
                 errorElement={<FourOFour />}
               />
               <Route
-                path="/favorites"
-                element={<Favorites />}
+                path="/heroes"
+                element={<WebDevHeroes />}
                 errorElement={<FourOFour />}
               />
+              <Route path="*" element={<FourOFour />} />
             </Routes>
           </Layout>
         </HelmetProvider>

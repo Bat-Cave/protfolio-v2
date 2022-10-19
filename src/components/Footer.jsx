@@ -60,11 +60,6 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  {/* <a className="text-secondary-content hover:text-secondary hover:bg-neutral">
-                    Third Link
-                  </a> */}
-                </li>
-                <li>
                   <Link
                     to="/site-technology"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
