@@ -69,21 +69,40 @@ const WebDevHeroes = () => {
       imgUrl: "https://avatars.githubusercontent.com/u/1500684?v=4",
       summary: (
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-          officiis nostrum recusandae perferendis incidunt minima quasi,
-          voluptatibus placeat dolorum quaerat quisquam earum dignissimos quod
-          odio dicta quis labore inventore aperiam? Lorem, ipsum dolor sit amet
-          consectetur adipisicing elit. Commodi officiis nostrum recusandae
-          perferendis incidunt minima quasi, voluptatibus placeat dolorum
-          quaerat quisquam earum dignissimos quod odio dicta quis labore
-          inventore aperiam? Lorem, ipsum dolor sit amet consectetur adipisicing
-          elit. Commodi officiis nostrum recusandae perferendis incidunt minima
-          quasi, voluptatibus placeat dolorum quaerat quisquam earum dignissimos
-          quod odio dicta quis labore inventore aperiam? Lorem, ipsum dolor sit
-          amet consectetur adipisicing elit. Commodi officiis nostrum recusandae
-          perferendis incidunt minima quasi, voluptatibus placeat dolorum
-          quaerat quisquam earum dignissimos quod odio dicta quis labore
-          inventore aperiam?
+          <span className="gradient-text font-extrabold">Kent C. Dodds</span> is
+          a full time educator whose goal is to{" "}
+          <i>
+            ‟make the world a better place by teaching people ... how to make
+            quality software.”
+          </i>{" "}
+          I frequently visit his website to read his blog articles and listen to
+          his{" "}
+          <a
+            href="https://kentcdodds.com/calls"
+            target="_blank"
+            className="link link-secondary"
+          >
+            <i>Call Kent</i>
+          </a>{" "}
+          podcast, although he has recently announced his new site,{" "}
+          <a
+            href="https://www.epicweb.dev/"
+            target="_blank"
+            className="link link-secondary"
+          >
+            Epic Web Dev
+          </a>
+          , where he plans to post everything he knows about web dev. I have
+          also gone through his React course on{" "}
+          <a
+            href="https://epicreact.dev/"
+            target="_blank"
+            className="link link-secondary"
+          >
+            epicreact.dev
+          </a>
+          . Kent's way of teaching quickly revealed a path to me that lead out
+          of the basic web dev tutorials into a world of potential.
         </p>
       ),
     },
@@ -264,8 +283,6 @@ const WebDevHeroes = () => {
     },
   ];
 
-  //TODO: Add Jeff Delaney (https://github.com/codediodeio)
-
   return (
     <SectionWrapper>
       <p className="text-center text-4xl mb-12 max-w-3xl mx-auto">
@@ -294,8 +311,8 @@ const WebDevHeroes = () => {
                     : "flex flex-row-reverse rounded-2xl bg-base-100 p-10 shadow-lg justify-between mb-8"
                 }
               >
-                <div className="avatar px-9">
-                  <div className="w-24 lg:w-[256px] h-24 lg:h-[256px] rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                <div className="avatar w-24 lg:w-[256px] h-24 lg:h-[256px]">
+                  <div className="w-full rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                     <LazyLoadImage
                       src={h.imgUrl}
                       alt={h.name}
@@ -307,14 +324,20 @@ const WebDevHeroes = () => {
                 <div
                   className={
                     isEven
-                      ? "flex flex-col pl-0"
-                      : "flex flex-col pl-0 text-right"
+                      ? "flex flex-col pl-0 w-[calc(100%-128px)] lg:w-[calc(100%-288px)]"
+                      : "flex flex-col pl-0 items-end w-[calc(100%-128px)] lg:w-[calc(100%-288px)]"
                   }
                 >
-                  <p className="text-2xl font-philosopher">{h.name}</p>
+                  <p className="text-2xl font-philosopher gradient-bottom-border flex w-max">
+                    {h.name}
+                  </p>
                   <br />
                   <div
-                    className={isEven ? "flex gap-4" : "flex gap-4 justify-end"}
+                    className={
+                      isEven
+                        ? "flex gap-4 flex-wrap"
+                        : "flex gap-4 justify-end flex-wrap"
+                    }
                   >
                     {h.links.map((l, i) => {
                       return (

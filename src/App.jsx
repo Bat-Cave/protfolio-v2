@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import WebDevHeroes from "./pages/WebDevHeroes";
 import SiteTechnology from "./pages/SiteTechnology";
 import FourOFour from "./pages/404";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 function App() {
   return (
