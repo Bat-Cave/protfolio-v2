@@ -46,14 +46,9 @@ const WebDevHeroes = () => {
       name: "Kent C. Dodds",
       links: [
         {
-          name: "GitHub",
-          url: "https://github.com/kentcdodds",
-          badge: getPlatformBadge("github", "large"),
-        },
-        {
-          name: "Website",
-          url: "https://kentcdodds.com/",
-          badge: getPlatformBadge("website", "large"),
+          name: "Youtube",
+          url: "https://youtube.com/c/KentCDodds-vids",
+          badge: getPlatformBadge("youtube", "large"),
         },
         {
           name: "Twitter",
@@ -61,27 +56,215 @@ const WebDevHeroes = () => {
           badge: getPlatformBadge("twitter", "large"),
         },
         {
-          name: "Youtube",
-          url: "https://youtube.com/c/KentCDodds-vids",
-          badge: getPlatformBadge("youtube", "large"),
+          name: "Website",
+          url: "https://kentcdodds.com/",
+          badge: getPlatformBadge("website", "large"),
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/kentcdodds",
+          badge: getPlatformBadge("github", "large"),
         },
       ],
       imgUrl: "https://avatars.githubusercontent.com/u/1500684?v=4",
       summary: (
         <p>
-          CEO of{" "}
-          <a href="https://ping.gg/" target="_blank">
-            Ping.gg
-          </a>{" "}
-          and Ex-Twitch Engineer,{" "}
-          <span className="gradient-text font-extrabold">Theo Browne</span> is
-          one of my favorite people to listen to.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          officiis nostrum recusandae perferendis incidunt minima quasi,
+          voluptatibus placeat dolorum quaerat quisquam earum dignissimos quod
+          odio dicta quis labore inventore aperiam? Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Commodi officiis nostrum recusandae
+          perferendis incidunt minima quasi, voluptatibus placeat dolorum
+          quaerat quisquam earum dignissimos quod odio dicta quis labore
+          inventore aperiam? Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Commodi officiis nostrum recusandae perferendis incidunt minima
+          quasi, voluptatibus placeat dolorum quaerat quisquam earum dignissimos
+          quod odio dicta quis labore inventore aperiam? Lorem, ipsum dolor sit
+          amet consectetur adipisicing elit. Commodi officiis nostrum recusandae
+          perferendis incidunt minima quasi, voluptatibus placeat dolorum
+          quaerat quisquam earum dignissimos quod odio dicta quis labore
+          inventore aperiam?
+        </p>
+      ),
+    },
+    {
+      name: "Jack Herrington",
+      links: [
+        {
+          name: "Youtube",
+          url: "https://www.youtube.com/@jherr",
+          badge: getPlatformBadge("youtube", "large"),
+        },
+        {
+          name: "Twitter",
+          url: "https://twitter.com/jherr",
+          badge: getPlatformBadge("twitter", "large"),
+        },
+        {
+          name: "Website",
+          url: "https://www.jackherrington.com/",
+          badge: getPlatformBadge("website", "large"),
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/jherr",
+          badge: getPlatformBadge("github", "large"),
+        },
+      ],
+      imgUrl: "https://avatars.githubusercontent.com/u/22392?v=4",
+      summary: (
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          officiis nostrum recusandae perferendis incidunt minima quasi,
+          voluptatibus placeat dolorum quaerat quisquam earum dignissimos quod
+          odio dicta quis labore inventore aperiam? Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Commodi officiis nostrum recusandae
+          perferendis incidunt minima quasi, voluptatibus placeat dolorum
+          quaerat quisquam earum dignissimos quod odio dicta quis labore
+          inventore aperiam? Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Commodi officiis nostrum recusandae perferendis incidunt minima
+          quasi, voluptatibus placeat dolorum quaerat quisquam earum dignissimos
+          quod odio dicta quis labore inventore aperiam? Lorem, ipsum dolor sit
+          amet consectetur adipisicing elit. Commodi officiis nostrum recusandae
+          perferendis incidunt minima quasi, voluptatibus placeat dolorum
+          quaerat quisquam earum dignissimos quod odio dicta quis labore
+          inventore aperiam?
+        </p>
+      ),
+    },
+    {
+      name: "Kevin Powell",
+      links: [
+        {
+          name: "Youtube",
+          url: "https://www.youtube.com/kepowob",
+          badge: getPlatformBadge("youtube", "large"),
+        },
+        {
+          name: "Twitter",
+          url: "https://twitter.com/KevinJPowell",
+          badge: getPlatformBadge("twitter", "large"),
+        },
+        {
+          name: "Website",
+          url: "https://www.kevinpowell.co/",
+          badge: getPlatformBadge("website", "large"),
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/kevin-powell",
+          badge: getPlatformBadge("github", "large"),
+        },
+      ],
+      imgUrl: "https://avatars.githubusercontent.com/u/25749407?v=4",
+      summary: (
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          officiis nostrum recusandae perferendis incidunt minima quasi,
+          voluptatibus placeat dolorum quaerat quisquam earum dignissimos quod
+          odio dicta quis labore inventore aperiam? Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Commodi officiis nostrum recusandae
+          perferendis incidunt minima quasi, voluptatibus placeat dolorum
+          quaerat quisquam earum dignissimos quod odio dicta quis labore
+          inventore aperiam? Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Commodi officiis nostrum recusandae perferendis incidunt minima
+          quasi, voluptatibus placeat dolorum quaerat quisquam earum dignissimos
+          quod odio dicta quis labore inventore aperiam? Lorem, ipsum dolor sit
+          amet consectetur adipisicing elit. Commodi officiis nostrum recusandae
+          perferendis incidunt minima quasi, voluptatibus placeat dolorum
+          quaerat quisquam earum dignissimos quod odio dicta quis labore
+          inventore aperiam?
+        </p>
+      ),
+    },
+    {
+      name: "Ben Awad",
+      links: [
+        {
+          name: "Youtube",
+          url: "https://www.youtube.com/benawad97",
+          badge: getPlatformBadge("youtube", "large"),
+        },
+        {
+          name: "Twitter",
+          url: "https://twitter.com/benawad/",
+          badge: getPlatformBadge("twitter", "large"),
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/benawad",
+          badge: getPlatformBadge("github", "large"),
+        },
+      ],
+      imgUrl: "https://avatars.githubusercontent.com/u/7872329?v=4",
+      summary: (
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          officiis nostrum recusandae perferendis incidunt minima quasi,
+          voluptatibus placeat dolorum quaerat quisquam earum dignissimos quod
+          odio dicta quis labore inventore aperiam? Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Commodi officiis nostrum recusandae
+          perferendis incidunt minima quasi, voluptatibus placeat dolorum
+          quaerat quisquam earum dignissimos quod odio dicta quis labore
+          inventore aperiam? Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Commodi officiis nostrum recusandae perferendis incidunt minima
+          quasi, voluptatibus placeat dolorum quaerat quisquam earum dignissimos
+          quod odio dicta quis labore inventore aperiam? Lorem, ipsum dolor sit
+          amet consectetur adipisicing elit. Commodi officiis nostrum recusandae
+          perferendis incidunt minima quasi, voluptatibus placeat dolorum
+          quaerat quisquam earum dignissimos quod odio dicta quis labore
+          inventore aperiam?
+        </p>
+      ),
+    },
+    {
+      name: "Jeff Delaney",
+      links: [
+        {
+          name: "Youtube",
+          url: "https://www.youtube.com/c/Fireship",
+          badge: getPlatformBadge("youtube", "large"),
+        },
+        {
+          name: "Twitter",
+          url: "https://twitter.com/jeffdelaney23",
+          badge: getPlatformBadge("twitter", "large"),
+        },
+        {
+          name: "Website",
+          url: "https://fireship.io/",
+          badge: getPlatformBadge("website", "large"),
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/codediodeio",
+          badge: getPlatformBadge("github", "large"),
+        },
+      ],
+      imgUrl: "https://avatars.githubusercontent.com/u/10172199?v=4",
+      summary: (
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          officiis nostrum recusandae perferendis incidunt minima quasi,
+          voluptatibus placeat dolorum quaerat quisquam earum dignissimos quod
+          odio dicta quis labore inventore aperiam? Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Commodi officiis nostrum recusandae
+          perferendis incidunt minima quasi, voluptatibus placeat dolorum
+          quaerat quisquam earum dignissimos quod odio dicta quis labore
+          inventore aperiam? Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Commodi officiis nostrum recusandae perferendis incidunt minima
+          quasi, voluptatibus placeat dolorum quaerat quisquam earum dignissimos
+          quod odio dicta quis labore inventore aperiam? Lorem, ipsum dolor sit
+          amet consectetur adipisicing elit. Commodi officiis nostrum recusandae
+          perferendis incidunt minima quasi, voluptatibus placeat dolorum
+          quaerat quisquam earum dignissimos quod odio dicta quis labore
+          inventore aperiam?
         </p>
       ),
     },
   ];
 
-  //TODO: Add Jack Herrington (https://github.com/jherr), Kevin Powell (https://github.com/kevin-powell), Ben Awad (https://github.com/benawad), Jeff Delaney (https://github.com/codediodeio)
+  //TODO: Add Jeff Delaney (https://github.com/codediodeio)
 
   return (
     <SectionWrapper>
@@ -99,25 +282,23 @@ const WebDevHeroes = () => {
         </span>
       </h1>
       <div className="mt-40">
-        {heroes.map((h, i) => {
-          const isEven = i % 2 === 0;
+        <Parallax>
+          {heroes.map((h, i) => {
+            const isEven = i % 2 === 0;
 
-          return (
-            <Parallax>
+            return (
               <div
                 className={
                   isEven
-                    ? "flex rounded-2xl bg-base-100 p-10 shadow-lg justify-between"
-                    : "flex flex-row-reverse rounded-2xl bg-base-100 p-10 shadow-lg justify-between"
+                    ? "flex rounded-2xl bg-base-100 p-10 shadow-lg justify-between mb-8"
+                    : "flex flex-row-reverse rounded-2xl bg-base-100 p-10 shadow-lg justify-between mb-8"
                 }
               >
                 <div className="avatar px-9">
-                  <div className="w-24 lg:w-[256px] rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <div className="w-24 lg:w-[256px] h-24 lg:h-[256px] rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                     <LazyLoadImage
                       src={h.imgUrl}
                       alt={h.name}
-                      width={256}
-                      height={256}
                       className="w-full h-full"
                       effect="opacity"
                     />
@@ -133,9 +314,7 @@ const WebDevHeroes = () => {
                   <p className="text-2xl font-philosopher">{h.name}</p>
                   <br />
                   <div
-                    className={
-                      isEven ? "flex gap-4" : "flex gap-4 flex-row-reverse"
-                    }
+                    className={isEven ? "flex gap-4" : "flex gap-4 justify-end"}
                   >
                     {h.links.map((l, i) => {
                       return (
@@ -151,9 +330,9 @@ const WebDevHeroes = () => {
                   {h.summary}
                 </div>
               </div>
-            </Parallax>
-          );
-        })}
+            );
+          })}
+        </Parallax>
       </div>
     </SectionWrapper>
   );
