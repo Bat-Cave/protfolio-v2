@@ -11,6 +11,8 @@ import {
   Discord,
   HomeSimpleDoor,
   StarOutline,
+  SendMail,
+  Globe,
 } from "iconoir-react";
 import { ReactComponent as Codewars } from "../assets/codewars_icon.svg";
 import { ReactComponent as CssBattle } from "../assets/cssbattle_icon.svg";
@@ -53,10 +55,26 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="/favorites"
+                    to="/contact"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
-                    <StarOutline width={24} height={24} /> Favorites
+                    <SendMail width={24} height={24} /> Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/experiences"
+                    className="text-secondary-content hover:text-secondary hover:bg-neutral"
+                  >
+                    <Globe width={24} height={24} /> Experiences
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/heroes"
+                    className="text-secondary-content hover:text-secondary hover:bg-neutral"
+                  >
+                    <StarOutline width={24} height={24} /> Web Dev Heroes
                   </Link>
                 </li>
                 <li>

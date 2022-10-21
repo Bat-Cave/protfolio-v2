@@ -237,7 +237,7 @@ const TechJourney = () => {
                     translateY,
                     zIndex: stacks.length - i,
                   }}
-                  className="card w-full shadow-md bg-secondary text-secondary-content text-sm md:text-base origin-top min-h-[30vh]"
+                  className="card w-full shadow-md bg-neutral text-neutral-content text-sm md:text-base origin-top min-h-[30vh]"
                 >
                   <div className="card-body p-3 py-6 md:p-6">
                     <div className="flex justify-between">
