@@ -5,6 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import {
   Code,
   Globe,
+  HardDrive,
   HomeSimpleDoor,
   Menu,
   SendMail,
@@ -97,6 +98,12 @@ const Nav = () => {
               <Link to="/contact">
                 <SendMail width={24} height={24} className="text-primary" />{" "}
                 Contact
+              </Link>
+            </li>
+            <li>
+              <Link to="/projects">
+                <HardDrive width={24} height={24} className="text-warning" />{" "}
+                Projects
               </Link>
             </li>
             <li>

@@ -80,7 +80,7 @@ const TechJourney = () => {
           <a
             href="https://replit.com/@Bat_Cave/Troubleshooting-App"
             target="_blank"
-            className="link link-secondary-content"
+            className="link link-primary"
           >
             here.
           </a>
@@ -104,7 +104,7 @@ const TechJourney = () => {
           <a
             href="https://devmountain.com/"
             target="_blank"
-            className="link link-secondary-content"
+            className="link link-primary"
           >
             Dev Mountain
           </a>
@@ -116,7 +116,7 @@ const TechJourney = () => {
           {getLanguageBadge("react", "small")}. By the end of the bootcamp, I
           had built a full-stack application with a clean UI, Authentication,
           and Data Visualization. The app was called <i>Nutrification</i> and
-          allowed users to keep track of the micro and macro nutrients you ate
+          allowed users to keep track of the micro and macro nutrients they ate
           using an API to grab food information.
         </p>
       ),

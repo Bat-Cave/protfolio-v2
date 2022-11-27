@@ -13,6 +13,7 @@ import {
   StarOutline,
   SendMail,
   Globe,
+  HardDrive,
 } from "iconoir-react";
 import { ReactComponent as Codewars } from "../assets/codewars_icon.svg";
 import { ReactComponent as CssBattle } from "../assets/cssbattle_icon.svg";
@@ -59,6 +60,12 @@ const Footer = () => {
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
                     <SendMail width={24} height={24} /> Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/projects">
+                    <HardDrive width={24} height={24} />
+                    Projects
                   </Link>
                 </li>
                 <li>

@@ -54,7 +54,10 @@ const NotAlone = () => {
       url: "https://yt3.ggpht.com/ytc/AMLnZu-Y9qV1iIAkAIMbL7d5tCFpCyXEyDkcGVjptSrbNg=s900-c-k-c0x00ffffff-no-rj",
       name: "replit.com",
     },
-    { url: "https://docs.codewars.com/logo.svg", name: "codewars.com" },
+    {
+      url: "https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631aaf6b1a176ea0525b6983_codewars-logomark.svg",
+      name: "codewars.com",
+    },
     {
       url: "data:image/png;base64,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",
       name: "flexboxfroggy.com",
@@ -62,6 +65,10 @@ const NotAlone = () => {
     {
       url: "https://pbs.twimg.com/profile_images/1491038861224517637/s-H1KgWO_400x400.png",
       name: "fontawesome.com",
+    },
+    {
+      url: "https://pbs.twimg.com/profile_images/1114446136302084096/BIu19jPP_400x400.png",
+      name: "cssbattle.dev",
     },
   ];
   const rows = 3;
@@ -103,14 +110,14 @@ const NotAlone = () => {
         >
           {getShuffledArray(bubbles).map((c, colInd) => (
             <div
-              className="tooltip flex justify-center items-center"
+              className="tooltip tooltip-info flex justify-center items-center"
               data-tip={`${c.name}`}
             >
               <LazyLoadImage
                 key={`bubble-col-${colInd}`}
                 src={c.url}
                 alt={`${c.name} profile picture`}
-                className="w-[60px] min-w-[60px] h-[60px] min-h-[60px] sm:w-[100px] sm:min-w-[100px] sm:h-[100px] sm:min-h-[100px] rounded-full mx-1 sm:p-2"
+                className="w-[60px] min-w-[60px] h-[60px] min-h-[60px] sm:w-[100px] sm:min-w-[100px] sm:h-[100px] sm:min-h-[100px] md:w-[150px] md:min-w-[150px] md:h-[150px] md:min-h-[150px] rounded-full mx-1 sm:p-2"
                 effect="opacity"
               />
             </div>
@@ -119,8 +126,8 @@ const NotAlone = () => {
       </div>
       <br />
       <br />
-      <div className="card relative w-full shadow-md bg-neutral text-neutral-content text-sm md:text-base p-12">
-        <div className=" w-full flex flex-col items-center z-10">
+      <div className="card relative w-full shadow-md bg-neutral text-neutral-content text-sm md:text-base p-12 max-w-2xl mx-auto">
+        <div className="w-full flex flex-col items-center z-10">
           <p>
             From my first program to now, I've had help along the way. We're
             blessed to live in a time when there is so much information at our

@@ -8,13 +8,14 @@ import netlify from "../assets/netlify.svg";
 import daisyui from "../assets/daisyui.webp";
 import iconoir from "../assets/iconoir.webp";
 import moon from "../assets/moon.webp";
+import launch from "../assets/launch.webp";
 import TechnologyTable from "../components/TechnologyTable";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Card from "../components/Card";
+import Parallax from "../components/Parallax";
 
 const SiteTechnology = () => {
   //todo: <a href="https://www.flaticon.com/free-icons/python" title="python icons">Python icons created by Freepik - Flaticon</a>
-  //todo: <a href="https://iconscout.com/3ds/launch" target="_blank">Launch 3D Illustration</a> by <a href="https://iconscout.com/contributors/akshaysalekar" target="_blank">Akshay Salekar</a>
 
   const coreTechnologies = [
     {
@@ -131,26 +132,30 @@ const SiteTechnology = () => {
         <span className="gradient-text font-extrabold">AWESOME</span>{" "}
         technologies:
       </h1>
-      <TechnologyTable
-        header="Core Technologies"
-        technologies={coreTechnologies}
-      />
+      <Parallax>
+        <TechnologyTable
+          header="Core Technologies"
+          technologies={coreTechnologies}
+        />
+      </Parallax>
       <br />
       <br />
       <br />
-      <TechnologyTable
-        header="Notable Packages"
-        technologies={notablePackages}
-      />
+      <Parallax>
+        <TechnologyTable
+          header="Notable Packages"
+          technologies={notablePackages}
+        />
+      </Parallax>
       <br />
       <br />
       <br />
       <h2 className="text-2xl mb-4 stat-value">Image Sources</h2>
       <section className="text-gray-600 body-font">
-        <div className="container mx-auto flex py-2 md:flex-row flex-col items-center justify-center">
-          <div className="flex flex-col flex-wrap md:text-left items-start text-center w-full">
+        <div className="container mx-auto flex py-2 md:flex-row flex-col items-center justify-between">
+          <div className="flex flex-col flex-wrap md:text-left items-start text-center h-full">
             <Tilt
-              className="parallax-effect-image"
+              className="parallax-effect-image h-full"
               perspective={100}
               tiltMaxAngleX={0.5}
               tiltMaxAngleY={0.5}
@@ -162,7 +167,7 @@ const SiteTechnology = () => {
               gyroscope={true}
             >
               <Card bordered>
-                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-secondary-focus w-full md:text-center text-left">
+                <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-secondary-focus w-full md:text-center text-left">
                   <a
                     href="https://iconscout.com/3ds/moon"
                     target="_blank"
@@ -170,7 +175,7 @@ const SiteTechnology = () => {
                   >
                     Moon 3D Illustration
                   </a>
-                </h1>
+                </h2>
                 <p className="mb-4 leading-relaxed text-base-content w-full md:text-center text-left">
                   by{" "}
                   <a
@@ -194,6 +199,58 @@ const SiteTechnology = () => {
                     alt="Moon"
                     className="object-cover object-center h-full w-full"
                     src={moon}
+                    effect="opacity"
+                  />
+                </div>
+              </Card>
+            </Tilt>
+          </div>
+          <div className="flex flex-col flex-wrap md:text-left items-start text-center h-full">
+            <Tilt
+              className="parallax-effect-image h-full"
+              perspective={100}
+              tiltMaxAngleX={0.5}
+              tiltMaxAngleY={0.5}
+              glareEnable={true}
+              glareMaxOpacity={0.2}
+              glareColor="#ffffff"
+              glarePosition="top"
+              glareBorderRadius="20px"
+              gyroscope={true}
+            >
+              <Card bordered>
+                <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-secondary-focus w-full md:text-center text-left">
+                  <a
+                    href="https://iconscout.com/3ds/launch"
+                    target="_blank"
+                    className="w-full md:text-center text-left text-base-content"
+                  >
+                    Launch 3D Illustration
+                  </a>
+                </h2>
+                <p className="mb-4 leading-relaxed text-base-content w-full md:text-center text-left">
+                  by{" "}
+                  <a
+                    href="https://iconscout.com/contributors/akshaysalekar"
+                    target="_blank"
+                    className="text-primary-focus"
+                  >
+                    Akshay Salekar
+                  </a>{" "}
+                  on{" "}
+                  <a
+                    href="https://iconscout.com"
+                    target="_blank"
+                    className="text-primary-focus"
+                  >
+                    IconScout
+                  </a>
+                </p>
+                <div className="my-8 max-w-[10rem] md:max-w-[20rem] mx-auto">
+                  <LazyLoadImage
+                    alt="Moon"
+                    className="object-cover object-center h-full w-full scale-150"
+                    src={launch}
                     effect="opacity"
                   />
                 </div>

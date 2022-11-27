@@ -10,6 +10,7 @@ import FourOFour from "./pages/404";
 import Contact from "./pages/Contact";
 import Experiences from "./pages/Experiences";
 import "react-lazy-load-image-component/src/effects/opacity.css";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
@@ -22,6 +23,11 @@ function App() {
               <Route
                 path="/contact"
                 element={<Contact />}
+                errorElement={<FourOFour />}
+              />
+              <Route
+                path="/projects"
+                element={<Projects />}
                 errorElement={<FourOFour />}
               />
               <Route
