@@ -360,6 +360,7 @@ const WebDevHeroes = () => {
 
             return (
               <div
+                key={`hero-${i}`}
                 className={
                   isEven
                     ? "flex flex-col md:flex-row rounded-2xl bg-base-100 p-10 shadow-lg justify-between mb-8"
@@ -395,7 +396,11 @@ const WebDevHeroes = () => {
                   >
                     {h.links.map((l, i) => {
                       return (
-                        <div className="tooltip" data-tip={l.name}>
+                        <div
+                          key={`badge-${l.name}-${h.name}`}
+                          className="tooltip"
+                          data-tip={l.name}
+                        >
                           <a href={l.url} target="_blank">
                             {l.badge}
                           </a>

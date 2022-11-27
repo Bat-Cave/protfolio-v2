@@ -75,7 +75,7 @@ const TechJourney = () => {
           prototype, showed it to my manager, who showed it to his boss, until
           it reached the call center director. Soon after, I was given the green
           light to start developing what is now know as the{" "}
-          <i>Troubleshooting Wizard</i>. It averaged about 6,0000 page views a
+          <i>Troubleshooting Wizard</i>. It averaged about 6,000 page views a
           month up until February of 2022. The prototype can be found{" "}
           <a
             href="https://replit.com/@Bat_Cave/Troubleshooting-App"
@@ -125,16 +125,10 @@ const TechJourney = () => {
 
   return (
     <SectionWrapper>
-      <h3 className="text-6xl lg:text-9xl gradient-text font-bold py-4 font-philosopher text-center">
+      <h3 className="text-6xl lg:text-9xl gradient-text font-bold py-4 font-philosopher text-center mb-10">
         My Tech Journey{" "}
         <Computer className="inline text-4xl lg:text-7xl text-primary-focus ml-4" />
       </h3>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <div ref={ref} className="flex justify-center relative mt-[-25vh]">
         <div className="w-1/3">
           {stacks.map((s, i) => {
