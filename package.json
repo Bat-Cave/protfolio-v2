@@ -11,8 +11,8 @@
   "dependencies": {
     "daisyui": "^2.31.0",
     "framer-motion": "^7.5.3",
-    "iconoir": "^5.3.1",
-    "iconoir-react": "^5.3.1",
+    "iconoir": "^6.0.0",
+    "iconoir-react": "^6.0.0",
     "keen-slider": "^6.8.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

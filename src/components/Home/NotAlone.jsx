@@ -112,6 +112,7 @@ const NotAlone = () => {
             <div
               className="tooltip tooltip-info flex justify-center items-center"
               data-tip={`${c.name}`}
+              key={c.name}
             >
               <LazyLoadImage
                 key={`bubble-col-${colInd}`}

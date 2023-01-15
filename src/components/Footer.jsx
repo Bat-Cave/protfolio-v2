@@ -6,14 +6,14 @@ import {
   LinkedIn,
   GitHub,
   Code,
-  FacebookSquared,
   Instagram,
   Discord,
   HomeSimpleDoor,
-  StarOutline,
+  Star,
   SendMail,
   Globe,
   HardDrive,
+  Facebook,
 } from "iconoir-react";
 import { ReactComponent as Codewars } from "../assets/codewars_icon.svg";
 import { ReactComponent as CssBattle } from "../assets/cssbattle_icon.svg";
@@ -63,7 +63,10 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/projects">
+                  <Link
+                    to="/projects"
+                    className="text-secondary-content hover:text-secondary hover:bg-neutral"
+                  >
                     <HardDrive width={24} height={24} />
                     Projects
                   </Link>
@@ -81,7 +84,7 @@ const Footer = () => {
                     to="/heroes"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
-                    <StarOutline width={24} height={24} /> Web Dev Heroes
+                    <Star width={24} height={24} /> Web Dev Heroes
                   </Link>
                 </li>
                 <li>
@@ -153,7 +156,7 @@ const Footer = () => {
                     target="_blank"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
-                    <FacebookSquared width={24} height={24} /> Facebook
+                    <Facebook width={24} height={24} /> Facebook
                   </a>
                 </li>
                 <li>

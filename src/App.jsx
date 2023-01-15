@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import Experiences from "./pages/Experiences";
 import "react-lazy-load-image-component/src/effects/opacity.css";
 import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
 
 function App() {
   return (
@@ -43,6 +44,11 @@ function App() {
               <Route
                 path="/heroes"
                 element={<WebDevHeroes />}
+                errorElement={<FourOFour />}
+              />
+              <Route
+                path="/resume"
+                element={<Resume />}
                 errorElement={<FourOFour />}
               />
               <Route path="*" element={<FourOFour />} />

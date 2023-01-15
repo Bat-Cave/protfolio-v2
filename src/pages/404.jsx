@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import SectionWrapper from "../components/SectionWrapper";
 import launch from "../assets/launch.webp";
-import { Code, HomeSimpleDoor, StarOutline } from "iconoir-react";
+import { Code, HomeSimpleDoor, Star } from "iconoir-react";
 import { Link } from "react-router-dom";
 import Parallax from "../components/Parallax";
 
@@ -71,7 +71,7 @@ const FourOFour = () => {
                 to="/favorites"
                 className="text-white hover:text-secondary hover:bg-neutral"
               >
-                <StarOutline width={24} height={24} /> Favorites
+                <Star width={24} height={24} /> Favorites
               </Link>
             </li>
             <li>

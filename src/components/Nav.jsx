@@ -9,7 +9,7 @@ import {
   HomeSimpleDoor,
   Menu,
   SendMail,
-  StarOutline,
+  Star,
 } from "iconoir-react";
 import useWindowSize from "../hooks/useWindowSize";
 import useOnClickOutside from "../hooks/useOnClickOutside";
@@ -114,8 +114,8 @@ const Nav = () => {
             </li>
             <li>
               <Link to="/heroes">
-                <StarOutline width={24} height={24} className="text-accent" />{" "}
-                Web Dev Heroes
+                <Star width={24} height={24} className="text-accent" /> Web Dev
+                Heroes
               </Link>
             </li>
             <li>
