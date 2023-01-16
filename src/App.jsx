@@ -7,8 +7,7 @@ import Home from "./pages/Home";
 import WebDevHeroes from "./pages/WebDevHeroes";
 import SiteTechnology from "./pages/SiteTechnology";
 import FourOFour from "./pages/404";
-import Contact from "./pages/Contact";
-import Experiences from "./pages/Experiences";
+// import Experiences from "./pages/Experiences";
 import "react-lazy-load-image-component/src/effects/opacity.css";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
@@ -22,20 +21,15 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} errorElement={<FourOFour />} />
               <Route
-                path="/contact"
-                element={<Contact />}
-                errorElement={<FourOFour />}
-              />
-              <Route
                 path="/projects"
                 element={<Projects />}
                 errorElement={<FourOFour />}
               />
-              <Route
+              {/* <Route
                 path="/experiences"
                 element={<Experiences />}
                 errorElement={<FourOFour />}
-              />
+              /> */}
               <Route
                 path="/site-technology"
                 element={<SiteTechnology />}

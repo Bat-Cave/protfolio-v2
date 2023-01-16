@@ -14,11 +14,7 @@ const Resume = () => {
       name: "Cove Security",
       link: "https://www.covesmart.com/",
       location: "Orem, UT",
-      description: `Aut omnis voluptatem sit sequi. Voluptatem temporibus
-      repellat voluptatem voluptatibus enim voluptas
-      necessitatibus. Aut quasi sunt dolor. Commodi dolores saepe
-      asperiores beatae voluptate corporis est ea voluptatem. Enim
-      quo sed et sint aspernatur distinctio qui quam.`,
+      description: `As a front-end developer on a small team, I utilized the JAM stack and Gatsby framework to create a seamless user experience. I worked alongside a senior front-end developer, our lead developer, and a backend developer to deliver the best possible outcome. I conducted split testing to understand and determine the preferences of customers and optimize the site's performance. Additionally, I used Storybook to create a component library that made it easy for the design team to review and provide feedback. I was quick to respond to any bugs that arose and worked diligently to resolve them. Furthermore, I ensured that the site was compliant with accessibility standards and helped in improving site performance to provide the best customer experience.`,
     },
     {
       logo: "https://media.glassdoor.com/sqll/653478/crandall-corporate-dietitians-squarelogo-1540365552857.png",
@@ -28,11 +24,7 @@ const Resume = () => {
       name: "Crandall Corporate Dietitians",
       link: "https://www.consultingrd.com/",
       location: "Mesa, AZ",
-      description: `Aut omnis voluptatem sit sequi. Voluptatem temporibus
-      repellat voluptatem voluptatibus enim voluptas
-      necessitatibus. Aut quasi sunt dolor. Commodi dolores saepe
-      asperiores beatae voluptate corporis est ea voluptatem. Enim
-      quo sed et sint aspernatur distinctio qui quam.`,
+      description: `I developed a recipe request system for communities using a variety of technologies including PHP, MySQL, HTML, CSS, and Javascript. Throughout the process, I actively incorporated feedback from the Menus team to ensure the final product met their specific needs and requirements.`,
     },
     {
       logo: "https://play-lh.googleusercontent.com/EoFBFos5OpCmn3kYJj2lMLGaKYVjltgTAPSz1j2X9V-XopBZ_f7K1opruJb_x2blGw",
@@ -42,11 +34,7 @@ const Resume = () => {
       name: "Omadi",
       link: "https://www.omadi.com/",
       location: "Lehi, UT",
-      description: `Aut omnis voluptatem sit sequi. Voluptatem temporibus
-      repellat voluptatem voluptatibus enim voluptas
-      necessitatibus. Aut quasi sunt dolor. Commodi dolores saepe
-      asperiores beatae voluptate corporis est ea voluptatem. Enim
-      quo sed et sint aspernatur distinctio qui quam.`,
+      description: `During my time at the company, I assisted customers through both inbound and outbound calls, tracking customer issues through a ticketing system. I also trained new customers on the software, conducting approximately 3-4 training calls per customer. I also developed a web extension to assist with my responsibilities and generated PDF templates for customers using HTML, CSS, and Javascript.`,
     },
     {
       logo: "https://play-lh.googleusercontent.com/rRrkoPQWMdvbHraWLiYxYnimGilcTcTZdwI7HvQZ2Yv7wM9VsKU2J7WmV8zH5wFFimuJ",
@@ -56,11 +44,7 @@ const Resume = () => {
       name: "Alder Security",
       link: "https://www.alder.com/",
       location: "Orem, UT",
-      description: `Aut omnis voluptatem sit sequi. Voluptatem temporibus
-      repellat voluptatem voluptatibus enim voluptas
-      necessitatibus. Aut quasi sunt dolor. Commodi dolores saepe
-      asperiores beatae voluptate corporis est ea voluptatem. Enim
-      quo sed et sint aspernatur distinctio qui quam.`,
+      description: `As a Technical Support representative, I assisted customers through both inbound and outbound calls, and trained over 30 new employees. I also improved training material for new employees and was assigned to help struggling employees improve their KPI statistics. Later on, I was promoted to Technical Support Supervisor, where I supervised a team of 6-8 agents and trained them through weekly call reviews. Additionally, I developed a troubleshooting web app that guides agents through troubleshooting alarm system equipment. The app was in use until February of 2022, with an average of 6,000 uses per month in Utah and the Philippines. My last role in the company was Technical Support Manager, where I produced department policies, procedures, reporting systems, and equipment troubleshooting material. I also conducted weekly meetings with company executives and other managers to discuss the state of the call center and identify ways to improve it.`,
     },
   ];
 
@@ -86,6 +70,7 @@ const Resume = () => {
   const skills = [
     "JavaScript",
     "React",
+    "Github",
     "Nodejs",
     "Netlify",
     "HTML/CSS",
@@ -100,10 +85,12 @@ const Resume = () => {
           <div className="card">
             <div
               className="h-32 bg-cover bg-center"
-              style={{ backgroundImage: `url(${orchard})` }}
+              style={{
+                backgroundImage: `url(${orchard})`,
+              }}
             ></div>
             <div className="card-body p-0 bg-neutral shadow flex-row justify-between">
-              <div className="p-7 relative -mt-10">
+              <div className="p-7 relative -mt-10 pr-2 md:pr-7">
                 <div className="avatar">
                   <div className="w-24 rounded-full ring ring-secondary ring-offset-base-100 ring-offset-2">
                     <img src={profile} alt="Avatar" className="user-photo" />
@@ -114,7 +101,7 @@ const Resume = () => {
                   Front-End Developer
                 </div>
               </div>
-              <div className="space-y-2 px-7 py-3">
+              <div className="space-y-2 px-7 py-3 pl-2 md:pl-7">
                 <div className="flex flex-col items-end">
                   <div className="text-slate-300 text-xs">Location</div>
                   <div className="font-medium text-lg text-right text-neutral-content">
@@ -125,12 +112,6 @@ const Resume = () => {
                   <div className="text-slate-300 text-xs">Experience</div>
                   <div className="font-medium text-lg text-right text-neutral-content">
                     3+ years
-                  </div>
-                </div>
-                <div className="flex flex-col items-end">
-                  <div className="text-slate-300 text-xs">Relocation</div>
-                  <div className="font-medium text-lg text-right text-neutral-content">
-                    No
                   </div>
                 </div>
               </div>
@@ -192,17 +173,20 @@ const Resume = () => {
           <div className="card bg-neutral">
             <div className="p-7 card-body">
               <h2 className="card-title">About me</h2>
-              <p className="text-neutral-content mb-5">
-                Libero quas veritatis nulla distinctio fuga nihil temporibus et.
-                Quia dicta sapiente qui porro molestiae nobis incidunt
-                voluptatem. Et voluptas sunt nihil. At perferendis voluptatem
-                dolores nulla. Adipisci dolore non. Praesentium ipsa magnam ut
-                quia explicabo voluptates.
+              <p className="text-neutral-content mb-5 text-sm md:text-base">
+                I was raised in southeast Arizona in a small town. My interests
+                during my youth included constructing various projects, playing
+                soccer, and playing drums. Prior to discovering my passion for
+                programming, I explored various career paths such as
+                architecture, teaching, and mortuary science. However, I
+                ultimately found that web development offered the opportunity to
+                apply my passion for building to the digital realm.
               </p>
 
               <div className="flex flex-col space-y-4">
                 <a
-                  href="mailto:richardl@hancock1.com"
+                  href="mailto:richardl@hancock1.com?subject=I'd%20like%20to%20get%20in%20touch"
+                  target="_blank"
                   className="link link-secondary flex items-center gap-2"
                 >
                   <MailOut />

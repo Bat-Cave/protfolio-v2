@@ -7,6 +7,7 @@ import {
   Globe,
   HardDrive,
   HomeSimpleDoor,
+  JournalPage,
   Menu,
   SendMail,
   Star,
@@ -95,9 +96,9 @@ const Nav = () => {
               </a>
             </li>
             <li>
-              <Link to="/contact">
-                <SendMail width={24} height={24} className="text-primary" />{" "}
-                Contact
+              <Link to="/resume">
+                <JournalPage width={24} height={24} className="text-primary" />{" "}
+                Resume
               </Link>
             </li>
             <li>
@@ -106,12 +107,12 @@ const Nav = () => {
                 Projects
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/experiences">
                 <Globe width={24} height={24} className="text-success" />{" "}
                 Experiences
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/heroes">
                 <Star width={24} height={24} className="text-accent" /> Web Dev

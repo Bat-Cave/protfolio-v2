@@ -14,6 +14,7 @@ import {
   Globe,
   HardDrive,
   Facebook,
+  JournalPage,
 } from "iconoir-react";
 import { ReactComponent as Codewars } from "../assets/codewars_icon.svg";
 import { ReactComponent as CssBattle } from "../assets/cssbattle_icon.svg";
@@ -56,10 +57,10 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="/contact"
+                    to="/resume"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
-                    <SendMail width={24} height={24} /> Contact
+                    <JournalPage width={24} height={24} /> Resume
                   </Link>
                 </li>
                 <li>
@@ -71,14 +72,14 @@ const Footer = () => {
                     Projects
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     to="/experiences"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
                     <Globe width={24} height={24} /> Experiences
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link
                     to="/heroes"

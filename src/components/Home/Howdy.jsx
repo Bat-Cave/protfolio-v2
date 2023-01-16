@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { m } from "framer-motion";
-import { GitHub, PeaceHand } from "iconoir-react";
+import { JournalPage, PeaceHand } from "iconoir-react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useKeenSlider } from "keen-slider/react";
 import Card from "../Card";
@@ -11,6 +11,7 @@ import ricoAsCat1 from "../../assets/rico-as-cat-1.webp";
 import ricoAsCat2 from "../../assets/rico-as-cat-2.webp";
 import ricoAsCat3 from "../../assets/rico-as-cat-3.webp";
 import ricoAsCat4 from "../../assets/rico-as-cat-4.webp";
+import { Link } from "react-router-dom";
 
 const Howdy = () => {
   const [details, setDetails] = useState(null);
@@ -128,13 +129,10 @@ const Howdy = () => {
                 creating.
               </p>
               <div className="card-actions justify-end mt-4">
-                <a
-                  href="https://github.com/Bat-Cave"
-                  className="btn btn-primary w-full sm:w-auto"
-                  target="_blank"
-                >
-                  <GitHub className="mr-2" width={24} height={24} /> My Github
-                </a>
+                <Link to="/resume" className="btn btn-info w-full sm:w-auto">
+                  <JournalPage className="mr-2" width={24} height={24} /> My
+                  Resume
+                </Link>
               </div>
             </Card>
           </div>
