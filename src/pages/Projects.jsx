@@ -4,7 +4,14 @@ import SectionWrapper from "../components/SectionWrapper";
 //todo: add necessary projects to github for easier referencing
 
 const Projects = () => {
-  return <SectionWrapper>Projects</SectionWrapper>;
+  return (
+    <SectionWrapper>
+      <h1 className="text-center text-4xl mb-12">
+        <span className="gradient-text font-extrabold">Coming Soon</span>{" "}
+      </h1>
+      <p className="text-center">This page is in progress... 👷</p>
+    </SectionWrapper>
+  );
 };
 
 export default Projects;

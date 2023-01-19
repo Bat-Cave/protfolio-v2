@@ -172,8 +172,8 @@ const WebDevHeroes = () => {
         <p>
           <span className="gradient-text font-extrabold">Kevin Powell</span> has
           an extensive knowdledge off CSS. He covers basic to advanced topics of
-          all things CSS, as well as divning into new CSS features. When it
-          comes to making robust styles, Kevin is the one to go to.
+          all things CSS, as well as diving into new CSS features. When it comes
+          to making robust styles, Kevin is the one to go to.
         </p>
       ),
     },
@@ -216,7 +216,8 @@ const WebDevHeroes = () => {
             The Code Report
           </a>
           " in which he sprinkles sarcasm into his reports about tech related
-          news.
+          news. There are many web dev technologies that I didn't know about
+          until watching his videos.
         </p>
       ),
     },
@@ -284,7 +285,7 @@ const WebDevHeroes = () => {
       summary: (
         <p>
           The first time I watched one of{" "}
-          <span className="gradient-text font-extrabold">Gary Simon's</span>{" "}
+          <span className="gradient-text font-extrabold">Sam Selikoff's</span>{" "}
           videos, I was blown away. I loved how he explained advanced front end
           topics, and I wasn't the only one who thought so. I went to the
           comments to compliment his teaching and found that many others had
