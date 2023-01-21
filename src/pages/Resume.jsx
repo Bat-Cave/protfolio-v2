@@ -3,6 +3,7 @@ import orchard from "../assets/orchard_photo.webp";
 import { GitHub, LinkedIn, MailOut } from "iconoir-react";
 import ExperienceSection from "../components/Resume/ExperienceSection";
 import EducationSection from "../components/Resume/EducationSection";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Resume = () => {
   const companies = [
@@ -68,14 +69,27 @@ const Resume = () => {
   ];
 
   const skills = [
+    "HTML/CSS",
     "JavaScript",
     "React",
-    "Github",
     "Nodejs",
-    "Netlify",
-    "HTML/CSS",
+    "Responsive Web Design",
+  ];
+
+  const experienceWith = [
     "PostgreSQL",
     "PHP",
+    "GraphQL",
+    "Figma",
+    "E-commerce",
+    "SSR",
+    "Netlify",
+    "Github",
+    "TypeScript",
+    "AWS",
+    "SCSS",
+    "Tailwind",
+    "Python",
   ];
 
   return (
@@ -125,6 +139,22 @@ const Resume = () => {
                 {skills.map((skill) => (
                   <span key={skill} className="badge badge-lg badge-secondary">
                     {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="card bg-neutral shadow-xl">
+            <div className="card-body gap-6">
+              <h2 className="card-title">Experience with</h2>
+              <div className="flex flex-wrap gap-3">
+                {experienceWith.map((experience) => (
+                  <span
+                    key={experience}
+                    className="badge badge-lg badge-primary"
+                  >
+                    {experience}
                   </span>
                 ))}
               </div>

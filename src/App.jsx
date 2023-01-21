@@ -11,6 +11,7 @@ import FourOFour from "./pages/404";
 import "react-lazy-load-image-component/src/effects/opacity.css";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <UseEffectScroll>
         <HelmetProvider>
           <Layout>
+            <ScrollToTop />
             <Routes>
               <Route path="/" element={<Home />} errorElement={<FourOFour />} />
               <Route
