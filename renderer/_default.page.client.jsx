@@ -3,6 +3,7 @@ import { hydrateRoot } from "react-dom/client";
 import { Layout } from "../src/components/Layout";
 import { LazyMotion, domAnimation } from "framer-motion";
 import { UseEffectScroll } from "react-use-smooth-scroll";
+import "./index.css";
 
 export { render };
 

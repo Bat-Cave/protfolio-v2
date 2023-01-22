@@ -1,10 +1,10 @@
-import profile from "../assets/rico_profile.webp";
-import orchard from "../assets/orchard_photo.webp";
+import profile from "../../assets/rico_profile.webp";
+import orchard from "../../assets/orchard_photo.webp";
 import { GitHub, LinkedIn, MailOut } from "iconoir-react";
-import ExperienceSection from "../src/components/Resume/ExperienceSection";
-import EducationSection from "../src/components/Resume/EducationSection";
+import ExperienceSection from "../../components/Resume/ExperienceSection";
+import EducationSection from "../../components/Resume/EducationSection";
 
-const Resume = () => {
+const Page = () => {
   const companies = [
     {
       logo: "https://www.datocms-assets.com/10154/1556724983-cove-icon.png?auto=format&ar=225%3A225&fit=max&ixlib=react-9.0.1&w=1246",
@@ -272,4 +272,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export { Page };

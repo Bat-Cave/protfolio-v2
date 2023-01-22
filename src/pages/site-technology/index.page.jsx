@@ -1,20 +1,20 @@
 import Tilt from "react-parallax-tilt";
-import SectionWrapper from "../components/SectionWrapper";
-import vite from "../assets/vitejs.svg";
-import react from "../assets/react-2.svg";
-import tailwind from "../assets/tailwindcss.svg";
-import framer from "../assets/framer-motion.svg";
-import netlify from "../assets/netlify.svg";
-import daisyui from "../assets/daisyui.webp";
-import iconoir from "../assets/iconoir.webp";
-import moon from "../assets/moon.webp";
-import launch from "../assets/launch.webp";
-import TechnologyTable from "../components/TechnologyTable";
+import SectionWrapper from "../../components/SectionWrapper";
+import vite from "../../assets/vitejs.svg";
+import react from "../../assets/react-2.svg";
+import tailwind from "../../assets/tailwindcss.svg";
+import framer from "../../assets/framer-motion.svg";
+import netlify from "../../assets/netlify.svg";
+import daisyui from "../../assets/daisyui.webp";
+import iconoir from "../../assets/iconoir.webp";
+import moon from "../../assets/moon.webp";
+import launch from "../../assets/launch.webp";
+import TechnologyTable from "../../components/TechnologyTable";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import Card from "../components/Card";
-import Parallax from "../components/Parallax";
+import Card from "../../components/Card";
+import Parallax from "../../components/Parallax";
 
-const SiteTechnology = () => {
+const Page = () => {
   //todo: <a href="https://www.flaticon.com/free-icons/python" title="python icons">Python icons created by Freepik - Flaticon</a>
 
   const coreTechnologies = [
@@ -263,4 +263,4 @@ const SiteTechnology = () => {
   );
 };
 
-export default SiteTechnology;
+export { Page };
