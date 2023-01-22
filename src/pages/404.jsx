@@ -1,11 +1,10 @@
 import { m } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import SectionWrapper from "../components/SectionWrapper";
+import SectionWrapper from "../src/components/SectionWrapper";
 import launch from "../assets/launch.webp";
 import { Code, HomeSimpleDoor, Star } from "iconoir-react";
-import { Link } from "react-router-dom";
-import Parallax from "../components/Parallax";
+import Parallax from "../src/components/Parallax";
 
 const FourOFour = () => {
   return (
@@ -67,20 +66,20 @@ const FourOFour = () => {
               </a>
             </li>
             <li>
-              <Link
-                to="/favorites"
+              <a
+                href="/favorites"
                 className="text-white hover:text-secondary hover:bg-neutral"
               >
                 <Star width={24} height={24} /> Favorites
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/site-technology"
+              <a
+                href="/site-technology"
                 className="text-white hover:text-secondary hover:bg-neutral"
               >
                 <Code width={24} height={24} /> Site Technology
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>

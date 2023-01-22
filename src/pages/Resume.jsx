@@ -1,9 +1,8 @@
 import profile from "../assets/rico_profile.webp";
 import orchard from "../assets/orchard_photo.webp";
 import { GitHub, LinkedIn, MailOut } from "iconoir-react";
-import ExperienceSection from "../components/Resume/ExperienceSection";
-import EducationSection from "../components/Resume/EducationSection";
-import ScrollToTop from "../components/ScrollToTop";
+import ExperienceSection from "../src/components/Resume/ExperienceSection";
+import EducationSection from "../src/components/Resume/EducationSection";
 
 const Resume = () => {
   const companies = [

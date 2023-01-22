@@ -1,7 +1,7 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import Parallax from "../components/Parallax";
-import SectionWrapper from "../components/SectionWrapper";
-import { getPlatformBadge } from "../utils/getPlatformBadge";
+import Parallax from "../src/components/Parallax";
+import SectionWrapper from "../src/components/SectionWrapper";
+import { getPlatformBadge } from "../src/utils/getPlatformBadge";
 
 const WebDevHeroes = () => {
   const heroes = [

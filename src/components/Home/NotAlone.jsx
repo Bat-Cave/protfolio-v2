@@ -1,6 +1,5 @@
 import { Group } from "iconoir-react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import SectionWrapper from "../SectionWrapper";
 
@@ -136,9 +135,9 @@ const NotAlone = () => {
             content to help others!
           </p>
           <br />
-          <Link to="/heroes" className="btn btn-primary max-w-[300px]">
+          <a href="/heroes" className="btn btn-primary max-w-[300px]">
             My Web Dev Heroes
-          </Link>
+          </a>
         </div>
       </div>
     </SectionWrapper>

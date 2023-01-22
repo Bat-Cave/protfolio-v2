@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import { Link, useLocation } from "react-router-dom";
 import { m, useScroll, useTransform } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import {
@@ -21,8 +20,8 @@ const Nav = () => {
   const { width } = useWindowSize();
   const onClickOutside = useOnClickOutside();
   const { scrollY } = useScroll();
-  const { pathname } = useLocation();
-  const isHome = pathname === "/";
+  const isHome = false;
+  // const isHome = window?.location?.href === "/";
   const isSmallScreen = width <= 1024;
   const transform = useTransform(
     scrollY,
@@ -96,16 +95,16 @@ const Nav = () => {
               </a>
             </li>
             <li>
-              <Link to="/resume">
+              <a href="/resume">
                 <JournalPage width={24} height={24} className="text-primary" />{" "}
                 Resume
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/projects">
+              <a href="/projects">
                 <HardDrive width={24} height={24} className="text-warning" />{" "}
                 Projects
-              </Link>
+              </a>
             </li>
             {/* <li>
               <Link to="/experiences">
@@ -114,16 +113,16 @@ const Nav = () => {
               </Link>
             </li> */}
             <li>
-              <Link to="/heroes">
+              <a href="/heroes">
                 <Star width={24} height={24} className="text-accent" /> Web Dev
                 Heroes
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/site-technology">
+              <a href="/site-technology">
                 <Code width={24} height={24} className="text-info" /> Site
                 Technology
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

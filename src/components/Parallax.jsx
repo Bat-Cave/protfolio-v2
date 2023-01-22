@@ -1,4 +1,4 @@
-import { useState, useRef, useLayoutEffect } from "react";
+import { useState, useRef } from "react";
 import {
   m,
   useScroll,
@@ -6,6 +6,7 @@ import {
   useSpring,
   useReducedMotion,
 } from "framer-motion";
+import { useEffect } from "react";
 
 const Parallax = ({ children, offset = 50, clampInitial, clampFinal }) => {
   const prefersReducedMotion = useReducedMotion();
@@ -25,7 +26,7 @@ const Parallax = ({ children, offset = 50, clampInitial, clampFinal }) => {
   );
   const y = useSpring(yRange, { stiffness: 400, damping: 90 });
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const element = ref.current;
     const onResize = () => {
       setElementTop(

@@ -11,7 +11,6 @@ import ricoAsCat1 from "../../assets/rico-as-cat-1.webp";
 import ricoAsCat2 from "../../assets/rico-as-cat-2.webp";
 import ricoAsCat3 from "../../assets/rico-as-cat-3.webp";
 import ricoAsCat4 from "../../assets/rico-as-cat-4.webp";
-import { Link } from "react-router-dom";
 
 const Howdy = () => {
   const [details, setDetails] = useState(null);
@@ -129,10 +128,10 @@ const Howdy = () => {
                 creating.
               </p>
               <div className="card-actions justify-end mt-4">
-                <Link to="/resume" className="btn btn-info w-full sm:w-auto">
+                <a href="/resume" className="btn btn-info w-full sm:w-auto">
                   <JournalPage className="mr-2" width={24} height={24} /> My
                   Resume
-                </Link>
+                </a>
               </div>
             </Card>
           </div>
