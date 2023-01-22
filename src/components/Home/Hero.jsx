@@ -4,14 +4,7 @@ import Parallax from "../Parallax";
 const Hero = () => {
   return (
     <div className="relative w-full h-screen group ">
-      <Helmet>
-        <script
-          data-who="💎 Made with naker.io 💎"
-          src="https://d23jutsnau9x47.cloudfront.net/back/v1.0.9/viewer.js"
-          data-option="{|environment|:{|gradient|:|vertical|,|sensitivity|:0.2,|colorStart|:[33,34,44,1],|colorEnd|:[81,20,185,1]},|particle|:{|life|:5,|power|:0.02,|texture|:|https://res.cloudinary.com/naker-io/image/upload/v1566560053/circle_05.png|,|number|:200,|colorStart|:[116,129,92,0.13],|colorEnd|:[198,188,107,0.52],|sizeStart|:0.4,|sizeEnd|:0.8,|direction1|:{|x|:0,|y|:100,|z|:100},|direction2|:{|x|:0,|y|:0,|z|:0}},|waterMark|:false}"
-          data-container="naker-destination"
-        ></script>
-      </Helmet>
+      <Helmet></Helmet>
       <div className="absolute bottom-0 top-unset lg:bottom-unset lg:top-0 w-full h-[calc(100vh+4.75rem)] translate-y-[0.1rem] lg:translate-y-[-4.75rem] shadow-bottom-inner-small lg:shadow-bottom-inner z-10 overflow-hidden flex pt-48 justify-start items-center flex-col">
         <Parallax>
           <m.h1
