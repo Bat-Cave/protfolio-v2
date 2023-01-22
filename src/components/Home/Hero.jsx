@@ -1,5 +1,8 @@
 import { m } from "framer-motion";
 import Parallax from "../Parallax";
+// const { StarSky } = await import("react-star-sky");
+import "react-star-sky/dist/index.css";
+
 const Hero = () => {
   return (
     <div className="relative w-full h-screen group ">
@@ -48,10 +51,9 @@ const Hero = () => {
           </m.div>
         </Parallax>
       </div>
-      <div
-        id="naker-destination"
-        className="absolute w-full h-[calc(100vh+4.75rem)] flex pt-36 lg:pt-0 lg:justify-center items-center flex-col z-0 translate-y-[-4.75rem] bg-[#343746] pb-52 px-7"
-      ></div>
+      <div className="absolute w-full h-[calc(100vh+4.75rem)] flex pt-36 lg:pt-0 lg:justify-center items-center flex-col z-0 translate-y-[-4.75rem] bg-[#343746] pb-52 px-7">
+        {/* <StarSky /> */}
+      </div>
     </div>
   );
 };

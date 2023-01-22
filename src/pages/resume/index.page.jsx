@@ -273,3 +273,8 @@ const Page = () => {
 };
 
 export { Page };
+
+export const documentProps = {
+  title: "Rico Hancock | Resume",
+  description: "Front-end Web Developer with 3+ years of experience",
+};

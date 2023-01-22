@@ -13,4 +13,8 @@ export default defineConfig({
     viteCompression({ filter: /\.(jsx|mjs|json|css|html)$/i }),
     ssr(),
   ],
+  ssr: {
+    // Add libraries containing invalid ESM here
+    noExternal: ["react-star-sky"],
+  },
 });

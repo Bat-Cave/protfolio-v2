@@ -264,3 +264,8 @@ const Page = () => {
 };
 
 export { Page };
+
+export const documentProps = {
+  title: "Rico Hancock | Site Technology",
+  description: "This site was build with these AWESOME technologies",
+};

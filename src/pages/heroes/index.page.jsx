@@ -421,3 +421,9 @@ const Page = () => {
 };
 
 export { Page };
+
+export const documentProps = {
+  title: "Rico Hancock | Heroes",
+  description:
+    "CSS Gurus, Javascript Giants, and Web Dev Content Creators. These are some of my web dev heroes",
+};
