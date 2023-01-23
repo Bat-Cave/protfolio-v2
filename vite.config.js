@@ -14,9 +14,7 @@ export default defineConfig({
     react(),
     viteCompression({ filter: /\.(jsx|mjs|json|css|html)$/i }),
     ssr({
-      prerender: {
-        disableAutoRun: true,
-      },
+      prerender: true,
     }),
   ],
   ssr: {
