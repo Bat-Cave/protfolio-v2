@@ -17,6 +17,6 @@ export default defineConfig({
   ],
   ssr: {
     // Add libraries containing invalid ESM here
-    noExternal: ["react-star-sky"],
+    noExternal: ["iconoir-react", "react-lazy-load-image-component"],
   },
 });
