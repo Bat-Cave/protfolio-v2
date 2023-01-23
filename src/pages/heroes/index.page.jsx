@@ -1,9 +1,9 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import Parallax from "../components/Parallax";
-import SectionWrapper from "../components/SectionWrapper";
-import { getPlatformBadge } from "../utils/getPlatformBadge";
+import Parallax from "../../components/Parallax";
+import SectionWrapper from "../../components/SectionWrapper";
+import { getPlatformBadge } from "../../utils/getPlatformBadge";
 
-const WebDevHeroes = () => {
+const Page = () => {
   const heroes = [
     {
       name: "Theo Browne",
@@ -420,4 +420,10 @@ const WebDevHeroes = () => {
   );
 };
 
-export default WebDevHeroes;
+export { Page };
+
+export const documentProps = {
+  title: "Rico Hancock | Heroes",
+  description:
+    "CSS Gurus, Javascript Giants, and Web Dev Content Creators. These are some of my web dev heroes",
+};

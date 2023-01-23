@@ -1,10 +1,10 @@
 import { m } from "framer-motion";
-import { Helmet } from "react-helmet-async";
 import Parallax from "../Parallax";
+const { StarBackground } = await import("./StarBackground");
+
 const Hero = () => {
   return (
     <div className="relative w-full h-screen group ">
-      <Helmet></Helmet>
       <div className="absolute bottom-0 top-unset lg:bottom-unset lg:top-0 w-full h-[calc(100vh+4.75rem)] translate-y-[0.1rem] lg:translate-y-[-4.75rem] shadow-bottom-inner-small lg:shadow-bottom-inner z-10 overflow-hidden flex pt-48 justify-start items-center flex-col">
         <Parallax>
           <m.h1
@@ -16,7 +16,7 @@ const Hero = () => {
               visible: { opacity: 1 },
               hidden: { opacity: 0 },
             }}
-            className="mb-12 text-5xl md:text-7xl lg:text-9xl font-bold gradient-text uppercase font-serif text-center z-50 font-philosopher"
+            className="mb-12 text-5xl md:text-7xl lg:text-9xl font-bold gradient-text uppercase text-center z-50 font-philosopher"
           >
             Always learning
           </m.h1>
@@ -50,12 +50,11 @@ const Hero = () => {
           </m.div>
         </Parallax>
       </div>
-      <div
-        id="naker-destination"
-        className="absolute w-full h-[calc(100vh+4.75rem)] flex pt-36 lg:pt-0 lg:justify-center items-center flex-col z-0 translate-y-[-4.75rem] bg-[#343746] pb-52 px-7"
-      ></div>
+      <div className="absolute w-full h-[calc(100vh+4.75rem)] flex pt-36 lg:pt-0 lg:justify-center items-center flex-col z-0 translate-y-[-4.80rem] bg-gradient-radial from-[rgb(81,20,185,.4)] to-base-100 pb-52 px-7 overflow-hidden">
+        <StarBackground />
+      </div>
     </div>
   );
 };
 
-export default Hero;
+export { Hero };

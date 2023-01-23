@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { m } from "framer-motion";
 // import { ReactComponent as LinkedIn } from "../assets/linkedin.svg";
 // import { ReactComponent as GitHub } from "../assets/github.svg";
@@ -56,45 +55,45 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <Link
-                    to="/resume"
+                  <a
+                    href="/resume"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
                     <JournalPage width={24} height={24} /> Resume
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    to="/projects"
+                  <a
+                    href="/projects"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
                     <HardDrive width={24} height={24} />
                     Projects
-                  </Link>
+                  </a>
                 </li>
                 {/* <li>
                   <Link
-                    to="/experiences"
+                    href="/experiences"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
                     <Globe width={24} height={24} /> Experiences
                   </Link>
                 </li> */}
                 <li>
-                  <Link
-                    to="/heroes"
+                  <a
+                    href="/heroes"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
                     <Star width={24} height={24} /> Web Dev Heroes
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    to="/site-technology"
+                  <a
+                    href="/site-technology"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
                     <Code width={24} height={24} /> Site Technology
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </nav>
