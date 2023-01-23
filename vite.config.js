@@ -13,7 +13,11 @@ export default defineConfig({
     svgr(),
     react(),
     viteCompression({ filter: /\.(jsx|mjs|json|css|html)$/i }),
-    ssr({ prerender: true }),
+    ssr({
+      prerender: {
+        disableAutoRun: true,
+      },
+    }),
   ],
   ssr: {
     // Add libraries containing invalid ESM here
