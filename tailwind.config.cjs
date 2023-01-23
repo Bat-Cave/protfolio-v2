@@ -16,16 +16,31 @@ module.exports = {
       },
       animation: {
         "fade-in": "fade-in 1s ease 1",
+        "animate-star-1": "animate-star 15s linear infinite",
+        "animate-star-2": "animate-star 20s linear infinite",
+        "animate-star-3": "animate-star 25s linear infinite",
+        "animate-star-4": "animate-star 30s linear infinite",
+        "animate-star-5": "animate-star 35s linear infinite",
+        "animate-star-6": "animate-star 40s linear infinite",
       },
       keyframes: {
         "fade-in": {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        "animate-star": {
+          "0%": { transform: "translateY(0)", opacity: 0 },
+          "25%": { opacity: 1 },
+          "75%": { opacity: 1 },
+          "100%": { transform: "translateY(-500px)", opacity: 0 },
+        },
       },
       screens: {
         "2xs": "375px",
         xs: "420px",
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
     },
   },

@@ -1,5 +1,5 @@
 import SectionWrapper from "../../components/SectionWrapper";
-import Hero from "../../components/Home/Hero";
+const { Hero } = await import("../../components/Home/Hero");
 import Howdy from "../../components/Home/Howdy";
 import TechJourney from "../../components/Home/TechJourney";
 import NotAlone from "../../components/Home/NotAlone";

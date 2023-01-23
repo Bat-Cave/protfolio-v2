@@ -14,14 +14,15 @@ import {
 import useWindowSize from "../hooks/useWindowSize";
 import useOnClickOutside from "../hooks/useOnClickOutside";
 import moon from "../assets/moon.webp";
+import { usePageContext } from "../../renderer/usePageContext";
 
 const Nav = () => {
+  const context = usePageContext();
   const dropdownRef = useRef();
   const { width } = useWindowSize();
   const onClickOutside = useOnClickOutside();
   const { scrollY } = useScroll();
-  const isHome = false;
-  // const isHome = window?.location?.href === "/";
+  const isHome = context.urlPathname === "/";
   const isSmallScreen = width <= 1024;
   const transform = useTransform(
     scrollY,

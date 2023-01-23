@@ -6,9 +6,9 @@ import { LazyMotion, domAnimation } from "framer-motion";
 import { UseEffectScroll } from "react-use-smooth-scroll";
 
 export { render };
+
 // See https://vite-plugin-ssr.com/data-fetching
 export const passToClient = ["pageProps", "urlPathname"];
-
 async function render(pageContext) {
   const { Page, pageProps } = pageContext;
   const pageHtml = ReactDOMServer.renderToString(
