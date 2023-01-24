@@ -12,7 +12,7 @@ export default defineConfig({
   plugins: [
     svgr(),
     react(),
-    // viteCompression({ filter: /\.(jsx|mjs|json|css|html)$/i }),
+    viteCompression({ filter: /\.(jsx|mjs|json|css|html)$/i }),
     ssr({
       prerender: true,
     }),

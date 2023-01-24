@@ -17,11 +17,11 @@ module.exports = {
       animation: {
         "fade-in": "fade-in 1s ease 1",
         "animate-star-1": "animate-star 15s linear infinite",
-        "animate-star-2": "animate-star 20s linear infinite",
-        "animate-star-3": "animate-star 25s linear infinite",
-        "animate-star-4": "animate-star 30s linear infinite",
-        "animate-star-5": "animate-star 35s linear infinite",
-        "animate-star-6": "animate-star 40s linear infinite",
+        "animate-star-2": "animate-star 22s linear infinite",
+        "animate-star-3": "animate-star 29s linear infinite",
+        "animate-star-4": "animate-star 36s linear infinite",
+        "animate-star-5": "animate-star 43s linear infinite",
+        "animate-star-6": "animate-star 50s linear infinite",
       },
       keyframes: {
         "fade-in": {

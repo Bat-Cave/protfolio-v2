@@ -1,7 +1,9 @@
+import { m, useInView } from "framer-motion";
 import profile from "../../assets/rico_profile.webp";
 import orchard from "../../assets/orchard_photo.webp";
 import ExperienceSection from "../../components/Resume/ExperienceSection";
 import EducationSection from "../../components/Resume/EducationSection";
+import { useRef } from "react";
 
 const Page = () => {
   const companies = [
@@ -90,11 +92,51 @@ const Page = () => {
     "Python",
   ];
 
+  const skillInViewRef = useRef(null);
+  const experienceInViewRef = useRef(null);
+
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.15, delayChildren: 0.5 },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 10 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        mass: 2,
+        duration: 1.5,
+      },
+    },
+  };
+
+  const skillsInView = useInView(skillInViewRef, {
+    once: true,
+    margin: "0px 0px 0px 0px",
+  });
+
+  const experienceInView = useInView(experienceInViewRef, {
+    once: true,
+    margin: "0px 0px 0px 0px",
+  });
+
   return (
     <div className="w-full max-w-[1280px] min-h-[calc(100vh-76px)] flex justify-center items-center p-3 pb-16 mt-[76px] mx-auto">
       <div className="grid gap-5 lg:grid-cols-3">
         <div className="space-y-5">
-          <div className="card">
+          <m.div
+            className="card"
+            variants={container}
+            initial="hidden"
+            animate={"show"}
+          >
             <div
               className="h-32 bg-cover bg-center"
               style={{
@@ -128,36 +170,53 @@ const Page = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </m.div>
 
-          <div className="card bg-neutral shadow-xl">
+          <m.div
+            ref={skillInViewRef}
+            className="card bg-neutral shadow-xl"
+            variants={container}
+            initial="hidden"
+            animate={skillsInView ? "show" : "hidden"}
+          >
             <div className="card-body gap-6">
               <h2 className="card-title">Skills</h2>
               <div className="flex flex-wrap gap-3">
                 {skills.map((skill) => (
-                  <span key={skill} className="badge badge-lg badge-secondary">
+                  <m.span
+                    variants={item}
+                    key={skill}
+                    className="badge badge-lg badge-secondary"
+                  >
                     {skill}
-                  </span>
+                  </m.span>
                 ))}
               </div>
             </div>
-          </div>
+          </m.div>
 
-          <div className="card bg-neutral shadow-xl">
+          <m.div
+            ref={experienceInViewRef}
+            className="card bg-neutral shadow-xl"
+            variants={container}
+            initial="hidden"
+            animate={experienceInView ? "show" : "hidden"}
+          >
             <div className="card-body gap-6">
               <h2 className="card-title">Experience with</h2>
               <div className="flex flex-wrap gap-3">
                 {experienceWith.map((experience) => (
-                  <span
+                  <m.span
+                    variants={item}
                     key={experience}
                     className="badge badge-lg badge-primary"
                   >
                     {experience}
-                  </span>
+                  </m.span>
                 ))}
               </div>
             </div>
-          </div>
+          </m.div>
 
           <div className="card bg-neutral shadow-xl">
             <div className="card-body gap-6">

@@ -5,7 +5,7 @@ import useWindowSize from "../../hooks/useWindowSize";
 import { getRandomInt } from "../../utils/tools";
 import Star from "./Star";
 
-const StarBackground = ({ starCount = 120, depth = 5 }) => {
+const StarBackground = ({ starCount = 200, depth = 5 }) => {
   let { scrollYProgress } = useScroll();
   let y = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   const { width, height } = useWindowSize();

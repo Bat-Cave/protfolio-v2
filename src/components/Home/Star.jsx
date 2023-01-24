@@ -28,7 +28,6 @@ const Star = ({ x, y, size, ...props }) => {
         top: y,
         width: `${(size | 1) * 1.5}px`,
         height: `${(size | 1) * 1.5}px`,
-        animationDelay: `${getRandomInt(0, 5)}s`,
       }}
       transition={{ type: "spring" }}
       className={`absolute bg-white rounded-full ${getAnimation(size | 1)}`}
