@@ -1,4 +1,3 @@
-import { Computer } from "iconoir-react";
 import SectionWrapper from "../SectionWrapper";
 import { m, useScroll, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef } from "react";
@@ -126,8 +125,7 @@ const TechJourney = () => {
   return (
     <SectionWrapper>
       <h3 className="text-6xl lg:text-9xl gradient-text font-bold py-4 font-philosopher text-center mb-10">
-        My Tech Journey{" "}
-        <Computer className="inline text-4xl lg:text-7xl text-primary-focus ml-4" />
+        My Tech Journey
       </h3>
       <div ref={ref} className="flex justify-center relative mt-[-25vh]">
         <div className="w-1/3">

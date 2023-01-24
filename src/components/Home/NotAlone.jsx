@@ -1,5 +1,3 @@
-import { Group } from "iconoir-react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import Marquee from "react-fast-marquee";
 import SectionWrapper from "../SectionWrapper";
 
@@ -95,8 +93,7 @@ const NotAlone = () => {
   return (
     <SectionWrapper>
       <p className="text-6xl lg:text-9xl gradient-text font-bold py-4 font-philosopher text-center">
-        I Wasn't Alone{" "}
-        <Group className="inline text-4xl lg:text-7xl text-primary-focus ml-4" />
+        I Wasn't Alone
       </p>
       <div>
         <Marquee
@@ -113,7 +110,7 @@ const NotAlone = () => {
               data-tip={`${c.name}`}
               key={c.name}
             >
-              <LazyLoadImage
+              <img
                 key={`bubble-col-${colInd}`}
                 src={c.url}
                 alt={`${c.name} profile picture`}

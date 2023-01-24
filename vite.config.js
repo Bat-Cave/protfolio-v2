@@ -12,13 +12,14 @@ export default defineConfig({
   plugins: [
     svgr(),
     react(),
-    viteCompression({ filter: /\.(jsx|mjs|json|css|html)$/i }),
+    // viteCompression({ filter: /\.(jsx|mjs|json|css|html)$/i }),
     ssr({
       prerender: true,
+      disableAutoFullBuild: true,
     }),
   ],
   ssr: {
     // Add libraries containing invalid ESM here
-    noExternal: ["iconoir-react", "react-lazy-load-image-component"],
+    // noExternal: ["iconoir-react"],
   },
 });

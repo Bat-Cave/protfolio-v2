@@ -1,4 +1,3 @@
-import { Css3, Html5 } from "iconoir-react";
 import { ReactComponent as Python } from "../assets/python.svg";
 import { ReactComponent as Javascript } from "../assets/javascript.svg";
 import { ReactComponent as React } from "../assets/react.svg";
@@ -34,24 +33,120 @@ const getLanguageBadge = (badge, size) => {
     html: {
       large: (
         <span className="badge bg-orange-600 border-orange-800 text-black gap-2 h-9 mt-2">
-          <Html5 width={24} height={24} /> HTML5
+          <svg
+            width="24px"
+            height="24px"
+            strokeWidth="1.98"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            color="#000000"
+          >
+            <path
+              d="M4 3l1.778 17.09L12 22l6.222-1.91L20 3H4z"
+              stroke="#000000"
+              strokeWidth="1.98"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></path>
+            <path
+              d="M17 7H7.5l.5 4.5h8l-.5 5.5-3.5 1-3.5-1-.25-2.5"
+              stroke="#000000"
+              strokeWidth="1.98"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></path>
+          </svg>{" "}
+          HTML5
         </span>
       ),
       small: (
         <span className="badge bg-orange-600 border-orange-800 text-black gap-1">
-          <Html5 width={16} height={16} /> HTML5
+          <svg
+            width="16px"
+            height="16px"
+            strokeWidth="1.98"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            color="#000000"
+          >
+            <path
+              d="M4 3l1.778 17.09L12 22l6.222-1.91L20 3H4z"
+              stroke="#000000"
+              strokeWidth="1.98"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></path>
+            <path
+              d="M17 7H7.5l.5 4.5h8l-.5 5.5-3.5 1-3.5-1-.25-2.5"
+              stroke="#000000"
+              strokeWidth="1.98"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></path>
+          </svg>{" "}
+          HTML5
         </span>
       ),
     },
     css: {
       large: (
         <span className="badge bg-blue-600 border-blue-800 text-black gap-2 h-9 mt-2">
-          <Css3 width={24} height={24} /> CSS3
+          <svg
+            width="24px"
+            height="24px"
+            strokeWidth="1.98"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            color="#000000"
+          >
+            <path
+              d="M4 3l1.778 17.09L12 22l6.222-1.91L20 3H4z"
+              stroke="#000000"
+              strokeWidth="1.98"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></path>
+            <path
+              d="M7 7h9.5l-1 10-3.5 1-3.5-1-.25-2.5M16 11.5H7.5"
+              stroke="#000000"
+              strokeWidth="1.98"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></path>
+          </svg>{" "}
+          CSS3
         </span>
       ),
       small: (
         <span className="badge bg-blue-600 border-blue-800 text-black gap-1">
-          <Css3 width={16} height={16} /> CSS3
+          <svg
+            width="16px"
+            height="16px"
+            strokeWidth="1.98"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            color="#000000"
+          >
+            <path
+              d="M4 3l1.778 17.09L12 22l6.222-1.91L20 3H4z"
+              stroke="#000000"
+              strokeWidth="1.98"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></path>
+            <path
+              d="M7 7h9.5l-1 10-3.5 1-3.5-1-.25-2.5M16 11.5H7.5"
+              stroke="#000000"
+              strokeWidth="1.98"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></path>
+          </svg>{" "}
+          CSS3
         </span>
       ),
     },

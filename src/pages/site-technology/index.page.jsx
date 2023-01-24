@@ -10,7 +10,6 @@ import iconoir from "../../assets/iconoir.webp";
 import moon from "../../assets/moon.webp";
 import launch from "../../assets/launch.webp";
 import TechnologyTable from "../../components/TechnologyTable";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import Card from "../../components/Card";
 import Parallax from "../../components/Parallax";
 
@@ -94,13 +93,6 @@ const Page = () => {
       description:
         "An asyncronous react component to manage changes to the document head.",
       version: "1.3.0",
-    },
-    {
-      name: "React Lazy Load Image",
-      logo: undefined,
-      url: "https://github.com/Aljullu/react-lazy-load-image-component",
-      description: "A React component to lazy load images.",
-      version: "1.5.5",
     },
     {
       name: "React Parallax Tilt",
@@ -195,7 +187,7 @@ const Page = () => {
                   </a>
                 </p>
                 <div className="my-8 max-w-[10rem] md:max-w-[20rem] mx-auto">
-                  <LazyLoadImage
+                  <img
                     alt="Moon"
                     className="object-cover object-center h-full w-full"
                     src={moon}
@@ -247,7 +239,7 @@ const Page = () => {
                   </a>
                 </p>
                 <div className="my-8 max-w-[10rem] md:max-w-[20rem] mx-auto">
-                  <LazyLoadImage
+                  <img
                     alt="Moon"
                     className="object-cover object-center h-full w-full scale-150"
                     src={launch}

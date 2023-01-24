@@ -1,6 +1,5 @@
 import profile from "../../assets/rico_profile.webp";
 import orchard from "../../assets/orchard_photo.webp";
-import { GitHub, LinkedIn, MailOut } from "iconoir-react";
 import ExperienceSection from "../../components/Resume/ExperienceSection";
 import EducationSection from "../../components/Resume/EducationSection";
 
@@ -218,7 +217,36 @@ const Page = () => {
                   target="_blank"
                   className="link link-secondary flex items-center gap-2"
                 >
-                  <MailOut />
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.98"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    color="#fff"
+                  >
+                    <path
+                      d="M5 9l4.5 3L14 9"
+                      stroke="#fff"
+                      strokeWidth="1.98"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></path>
+                    <path
+                      d="M17 19H3a2 2 0 01-2-2V7a2 2 0 012-2h13a2 2 0 012 2v2"
+                      stroke="#fff"
+                      strokeWidth="1.98"
+                      strokeLinecap="round"
+                    ></path>
+                    <path
+                      d="M17 14h6m0 0l-3-3m3 3l-3 3"
+                      stroke="#fff"
+                      strokeWidth="1.98"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></path>
+                  </svg>
                   <span>richardl@hancock1.com</span>
                 </a>
 
@@ -229,7 +257,30 @@ const Page = () => {
                       href="https://www.linkedin.com/in/richard-l-hancock"
                       className="social-link-hover"
                     >
-                      <LinkedIn />
+                      <svg
+                        width="20px"
+                        height="20px"
+                        strokeWidth="1.98"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        color="#fff"
+                      >
+                        <path
+                          d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5zM7 17v-7"
+                          stroke="#fff"
+                          strokeWidth="1.98"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        ></path>
+                        <path
+                          d="M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011"
+                          stroke="#fff"
+                          strokeWidth="1.98"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        ></path>
+                      </svg>
                     </a>
                   </li>
                   <li>
@@ -237,7 +288,23 @@ const Page = () => {
                       href="https://github.com/Bat-Cave"
                       className="social-link-hover"
                     >
-                      <GitHub />
+                      <svg
+                        width="20px"
+                        height="20px"
+                        strokeWidth="1.98"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        color="#fff"
+                      >
+                        <path
+                          d="M16 22.027v-2.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 00-1.5-3.75 5.07 5.07 0 00-.09-3.77s-1.18-.35-3.91 1.48a13.38 13.38 0 00-7 0c-2.73-1.83-3.91-1.48-3.91-1.48A5.07 5.07 0 005 5.797a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 00-.94 2.58v2.87M9 20.027c-3 .973-5.5 0-7-3"
+                          stroke="#fff"
+                          strokeWidth="1.98"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        ></path>
+                      </svg>
                     </a>
                   </li>
                   <li>

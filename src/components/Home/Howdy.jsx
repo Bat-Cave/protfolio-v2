@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { m } from "framer-motion";
-import { JournalPage, PeaceHand } from "iconoir-react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useKeenSlider } from "keen-slider/react";
 import Card from "../Card";
 import SectionWrapper from "../SectionWrapper";
@@ -105,7 +103,7 @@ const Howdy = () => {
                     style={scaleStyle(idx)}
                     className="relative mask mask-squircle h-full w-full max-h-[320px] max-w-[320px]"
                   >
-                    <LazyLoadImage
+                    <img
                       alt={image.alt}
                       className="object-cover object-center h-full w-full"
                       src={image.src}
@@ -118,8 +116,7 @@ const Howdy = () => {
           </div>
           <div className="flex flex-col justify-center items-center flex-wrap lg:w-1/2 lg:text-left text-center ml-0 lg:ml-4">
             <h2 className="text-6xl lg:text-9xl gradient-text font-bold py-4 font-philosopher flex items-center">
-              Howdy{" "}
-              <PeaceHand className="text-4xl lg:text-7xl text-primary-focus" />
+              Howdy
             </h2>
             <Card>
               <h2 className="card-title mb-4">My name is Rico</h2>
@@ -129,8 +126,32 @@ const Howdy = () => {
               </p>
               <div className="card-actions justify-end mt-4">
                 <a href="/resume" className="btn btn-info w-full sm:w-auto">
-                  <JournalPage className="mr-2" width={24} height={24} /> My
-                  Resume
+                  <svg
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.98"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    color="#003e4d"
+                    className="mr-2"
+                  >
+                    <path
+                      d="M6 6h12M6 10h12M13 14h5M13 18h5M2 21.4V2.6a.6.6 0 01.6-.6h18.8a.6.6 0 01.6.6v18.8a.6.6 0 01-.6.6H2.6a.6.6 0 01-.6-.6z"
+                      stroke="#003e4d"
+                      strokeWidth="1.98"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></path>
+                    <path
+                      d="M6 18v-4h3v4H6z"
+                      stroke="#003e4d"
+                      strokeWidth="1.98"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></path>
+                  </svg>{" "}
+                  My Resume
                 </a>
               </div>
             </Card>

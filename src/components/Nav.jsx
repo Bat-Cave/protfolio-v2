@@ -1,16 +1,5 @@
 import { useRef } from "react";
 import { m, useScroll, useTransform } from "framer-motion";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import {
-  Code,
-  Globe,
-  HardDrive,
-  HomeSimpleDoor,
-  JournalPage,
-  Menu,
-  SendMail,
-  Star,
-} from "iconoir-react";
 import useWindowSize from "../hooks/useWindowSize";
 import useOnClickOutside from "../hooks/useOnClickOutside";
 import moon from "../assets/moon.webp";
@@ -63,7 +52,7 @@ const Nav = () => {
         style={{ transform }}
         className="w-20 lg:w-20 absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] fade-in"
       >
-        <LazyLoadImage
+        <img
           src={moon}
           alt="Moon"
           width={80}
@@ -79,7 +68,23 @@ const Nav = () => {
           className="dropdown lg:dropdown-end"
         >
           <label tabIndex={0} className="btn btn-ghost rounded-btn">
-            <Menu width={24} height={24} />
+            <svg
+              width="24px"
+              height="24px"
+              strokeWidth="1.98"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              color="#f8f8f2"
+            >
+              <path
+                d="M3 5h18M3 12h18M3 19h18"
+                stroke="#f8f8f2"
+                strokeWidth="1.98"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+            </svg>
           </label>
           <ul
             tabIndex={0}
@@ -87,23 +92,79 @@ const Nav = () => {
           >
             <li>
               <a href="/">
-                <HomeSimpleDoor
-                  width={24}
-                  height={24}
-                  className="text-secondary"
-                />{" "}
+                <svg
+                  width="24px"
+                  height="24px"
+                  strokeWidth="1.98"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  color="#bf95f9"
+                >
+                  <path
+                    d="M9 21H7a4 4 0 01-4-4v-6.292a4 4 0 011.927-3.421l5-3.03a4 4 0 014.146 0l5 3.03A4 4 0 0121 10.707V17a4 4 0 01-4 4h-2m-6 0v-4a3 3 0 013-3v0a3 3 0 013 3v4m-6 0h6"
+                    stroke="#bf95f9"
+                    strokeWidth="1.98"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></path>
+                </svg>{" "}
                 Home
               </a>
             </li>
             <li>
               <a href="/resume">
-                <JournalPage width={24} height={24} className="text-primary" />{" "}
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.98"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  color="#ff7ac6"
+                >
+                  <path
+                    d="M6 6h12M6 10h12M13 14h5M13 18h5M2 21.4V2.6a.6.6 0 01.6-.6h18.8a.6.6 0 01.6.6v18.8a.6.6 0 01-.6.6H2.6a.6.6 0 01-.6-.6z"
+                    stroke="#ff7ac6"
+                    strokeWidth="1.98"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></path>
+                  <path
+                    d="M6 18v-4h3v4H6z"
+                    stroke="#ff7ac6"
+                    strokeWidth="1.98"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></path>
+                </svg>{" "}
                 Resume
               </a>
             </li>
             <li>
               <a href="/projects">
-                <HardDrive width={24} height={24} className="text-warning" />{" "}
+                <svg
+                  width="24px"
+                  height="24px"
+                  strokeWidth="1.98"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  color="#f1fa89"
+                >
+                  <path
+                    d="M10 17.01l.01-.011M6 17.01l.01-.011"
+                    stroke="#f1fa89"
+                    strokeWidth="1.98"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></path>
+                  <path
+                    d="M2 13v7.4a.6.6 0 00.6.6h18.8a.6.6 0 00.6-.6V13M2 13h20M2 13l2.872-9.572A.6.6 0 015.446 3h13.108a.6.6 0 01.574.428L22 13"
+                    stroke="#f1fa89"
+                    strokeWidth="1.98"
+                  ></path>
+                </svg>{" "}
                 Projects
               </a>
             </li>
@@ -115,14 +176,46 @@ const Nav = () => {
             </li> */}
             <li>
               <a href="/heroes">
-                <Star width={24} height={24} className="text-accent" /> Web Dev
-                Heroes
+                <svg
+                  width="24px"
+                  height="24px"
+                  strokeWidth="1.98"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  color="#ffb86b"
+                >
+                  <path
+                    d="M8.587 8.236l2.598-5.232a.911.911 0 011.63 0l2.598 5.232 5.808.844a.902.902 0 01.503 1.542l-4.202 4.07.992 5.75c.127.738-.653 1.3-1.32.952L12 18.678l-5.195 2.716c-.666.349-1.446-.214-1.319-.953l.992-5.75-4.202-4.07a.902.902 0 01.503-1.54l5.808-.845z"
+                    stroke="#ffb86b"
+                    strokeWidth="1.98"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></path>
+                </svg>{" "}
+                Web Dev Heroes
               </a>
             </li>
             <li>
               <a href="/site-technology">
-                <Code width={24} height={24} className="text-info" /> Site
-                Technology
+                <svg
+                  width="24px"
+                  height="24px"
+                  strokeWidth="1.98"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  color="#8be8fd"
+                >
+                  <path
+                    d="M13.5 6L10 18.5M6.5 8.5L3 12l3.5 3.5M17.5 8.5L21 12l-3.5 3.5"
+                    stroke="#8be8fd"
+                    strokeWidth="1.98"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></path>
+                </svg>{" "}
+                Site Technology
               </a>
             </li>
           </ul>

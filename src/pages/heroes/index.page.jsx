@@ -1,4 +1,3 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import Parallax from "../../components/Parallax";
 import SectionWrapper from "../../components/SectionWrapper";
 import { getPlatformBadge } from "../../utils/getPlatformBadge";
@@ -370,7 +369,7 @@ const Page = () => {
               >
                 <div className="avatar w-24 lg:w-[256px] h-24 lg:h-[256px]">
                   <div className="w-full rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                    <LazyLoadImage
+                    <img
                       src={h.imgUrl}
                       alt={h.name}
                       className="w-full h-full"
