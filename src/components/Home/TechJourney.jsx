@@ -1,7 +1,60 @@
 import SectionWrapper from "../SectionWrapper";
-import { m, useScroll, useSpring, useTransform } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { m, useScroll, useTransform, useInView } from "framer-motion";
+import { useRef } from "react";
 import { getLanguageBadge } from "../../utils/getLanguageBadge";
+
+const YearAndStack = ({ s, i, ...props }) => {
+  const inViewRef = useRef(null);
+
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.15, delayChildren: 0.5 },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 10 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        mass: 2,
+        duration: 1.5,
+      },
+    },
+  };
+
+  const isInView = useInView(inViewRef, {
+    once: true,
+    margin: "0px 0px 0px 0px",
+  });
+
+  return (
+    <div
+      ref={inViewRef}
+      className="h-[100vh] w-full flex flex-col items-center justify-center text-4xl"
+      {...props}
+    >
+      <p>{s.year}</p>
+      <m.div
+        variants={container}
+        initial="hidden"
+        animate={isInView ? "show" : "hidden"}
+        className="flex gap-1 flex-wrap justify-center max-w-[250px]"
+      >
+        {s.labels.map((l, ind) => (
+          <m.span variants={item} key={`label-${i}-${ind}`}>
+            {l}
+          </m.span>
+        ))}
+      </m.div>
+    </div>
+  );
+};
 
 const TechJourney = () => {
   //todo: get exact dates for tech journey
@@ -130,19 +183,7 @@ const TechJourney = () => {
       <div ref={ref} className="flex justify-center relative mt-[-25vh]">
         <div className="w-1/3">
           {stacks.map((s, i) => {
-            return (
-              <div
-                key={`year-${s.year}-${i}`}
-                className="h-[100vh] w-full flex flex-col items-center justify-center text-4xl"
-              >
-                <p>{s.year}</p>
-                <div className="flex gap-1 flex-wrap justify-center max-w-[250px]">
-                  {s.labels.map((l, ind) => (
-                    <span key={`label-${i}-${ind}`}>{l}</span>
-                  ))}
-                </div>
-              </div>
-            );
+            return <YearAndStack key={`year-${s.year}-${i}`} s={s} i={i} />;
           })}
         </div>
         <div className="sticky w-2/3 h-[100vh] flex justify-center items-center top-0 overflow-x-hidden ">

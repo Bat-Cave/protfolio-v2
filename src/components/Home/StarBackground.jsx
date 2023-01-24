@@ -1,4 +1,4 @@
-import { m } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { useEffect } from "react";
 import { useState } from "react";
 import useWindowSize from "../../hooks/useWindowSize";
@@ -6,6 +6,8 @@ import { getRandomInt } from "../../utils/tools";
 import Star from "./Star";
 
 const StarBackground = ({ starCount = 120, depth = 5 }) => {
+  let { scrollYProgress } = useScroll();
+  let y = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   const { width, height } = useWindowSize();
   const [mounted, setMounted] = useState(false);
 
@@ -25,7 +27,7 @@ const StarBackground = ({ starCount = 120, depth = 5 }) => {
   }, []);
 
   return (
-    <m.div className="w-full h-full">
+    <m.div className="w-full h-full" style={{ y }}>
       {mounted
         ? Array(starCount)
             .fill(false)

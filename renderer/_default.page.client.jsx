@@ -6,7 +6,7 @@ import { UseEffectScroll } from "react-use-smooth-scroll";
 import "./index.css";
 
 export { render };
-
+let root;
 async function render(pageContext) {
   const { Page, pageProps } = pageContext;
   const page = (
