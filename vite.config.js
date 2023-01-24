@@ -19,6 +19,6 @@ export default defineConfig({
   ],
   ssr: {
     // Add libraries containing invalid ESM here
-    // noExternal: ["iconoir-react"],
+    noExternal: ["iconoir-react"],
   },
 });
