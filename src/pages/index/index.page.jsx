@@ -1,9 +1,8 @@
 import SectionWrapper from "../../components/SectionWrapper";
-const { Hero } = await import("../../components/Home/Hero");
+import Hero from "../../components/Home/Hero";
 import Howdy from "../../components/Home/Howdy";
 import TechJourney from "../../components/Home/TechJourney";
 import NotAlone from "../../components/Home/NotAlone";
-import GithubGraph from "../../components/Home/GithubGraph";
 
 const Page = () => {
   return (
@@ -11,7 +10,6 @@ const Page = () => {
       <Hero />
       <Howdy />
       <TechJourney />
-      {/* <GithubGraph /> */}
       <NotAlone />
     </SectionWrapper>
   );

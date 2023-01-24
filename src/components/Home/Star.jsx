@@ -37,4 +37,4 @@ const Star = ({ x, y, size, ...props }) => {
   );
 };
 
-export { Star };
+export default Star;

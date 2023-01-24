@@ -1,7 +1,10 @@
+import { useState, useEffect } from "react";
+import { useState } from "react";
 import Marquee from "react-fast-marquee";
 import SectionWrapper from "../SectionWrapper";
 
 const NotAlone = () => {
+  const [mounted, setMounted] = useState(false);
   const bubbles = [
     {
       url: "https://avatars.githubusercontent.com/u/6751787?v=4",
@@ -89,6 +92,14 @@ const NotAlone = () => {
 
     return array;
   };
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return <></>;
+  }
 
   return (
     <SectionWrapper>

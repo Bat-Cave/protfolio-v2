@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import useWindowSize from "../../hooks/useWindowSize";
 import { getRandomInt } from "../../utils/tools";
-const { Star } = await import("./Star");
+import Star from "./Star";
 
 const StarBackground = ({ starCount = 120, depth = 5 }) => {
   const { width, height } = useWindowSize();
@@ -44,4 +44,4 @@ const StarBackground = ({ starCount = 120, depth = 5 }) => {
   );
 };
 
-export { StarBackground };
+export default StarBackground;

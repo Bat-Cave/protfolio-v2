@@ -1,6 +1,6 @@
 import { m } from "framer-motion";
 import Parallax from "../Parallax";
-const { StarBackground } = await import("./StarBackground");
+import StarBackground from "./StarBackground";
 
 const Hero = () => {
   return (
@@ -51,10 +51,10 @@ const Hero = () => {
         </Parallax>
       </div>
       <div className="absolute w-full h-[calc(100vh+4.75rem)] flex pt-36 lg:pt-0 lg:justify-center items-center flex-col z-0 translate-y-[-4.80rem] bg-gradient-radial from-[rgb(81,20,185,.4)] to-base-100 pb-52 px-7 overflow-hidden">
-        <StarBackground />
+        {/* <StarBackground /> */}
       </div>
     </div>
   );
 };
 
-export { Hero };
+export default Hero;
