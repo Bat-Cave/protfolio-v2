@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { useState } from "react";
 import Marquee from "react-fast-marquee";
 import SectionWrapper from "../SectionWrapper";
 
