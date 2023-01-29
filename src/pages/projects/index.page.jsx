@@ -1,9 +1,9 @@
-import SectionWrapper from "../components/SectionWrapper";
+import SectionWrapper from "../../components/SectionWrapper";
 
 //todo: go through coding folder and fild the projects you've made
 //todo: add necessary projects to github for easier referencing
 
-const Projects = () => {
+const Page = () => {
   return (
     <SectionWrapper>
       <h1 className="text-center text-4xl mb-12">
@@ -14,4 +14,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export { Page };

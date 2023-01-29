@@ -61,7 +61,151 @@ const Nav = () => {
           effect="opacity"
         />
       </m.div>
-      <div className="flex-none">
+      <div className="hidden lg:flex">
+        <ul className="flex gap-3">
+          <li>
+            <a href="/" className="btn btn-xs flex gap-2 text-xs normal-case">
+              <svg
+                width="20px"
+                height="20px"
+                strokeWidth="1.98"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="#bf95f9"
+              >
+                <path
+                  d="M9 21H7a4 4 0 01-4-4v-6.292a4 4 0 011.927-3.421l5-3.03a4 4 0 014.146 0l5 3.03A4 4 0 0121 10.707V17a4 4 0 01-4 4h-2m-6 0v-4a3 3 0 013-3v0a3 3 0 013 3v4m-6 0h6"
+                  stroke="#bf95f9"
+                  strokeWidth="1.98"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </svg>{" "}
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="/resume"
+              className="btn btn-xs flex gap-2 text-xs normal-case"
+            >
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 0 24 24"
+                strokeWidth="1.98"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="#ff7ac6"
+              >
+                <path
+                  d="M6 6h12M6 10h12M13 14h5M13 18h5M2 21.4V2.6a.6.6 0 01.6-.6h18.8a.6.6 0 01.6.6v18.8a.6.6 0 01-.6.6H2.6a.6.6 0 01-.6-.6z"
+                  stroke="#ff7ac6"
+                  strokeWidth="1.98"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+                <path
+                  d="M6 18v-4h3v4H6z"
+                  stroke="#ff7ac6"
+                  strokeWidth="1.98"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </svg>{" "}
+              Resume
+            </a>
+          </li>
+          {/* <li>
+            <a
+              href="/projects"
+              className="btn btn-xs flex gap-2 text-xs normal-case"
+            >
+              <svg
+                width="20px"
+                height="20px"
+                strokeWidth="1.98"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="#f1fa89"
+              >
+                <path
+                  d="M10 17.01l.01-.011M6 17.01l.01-.011"
+                  stroke="#f1fa89"
+                  strokeWidth="1.98"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+                <path
+                  d="M2 13v7.4a.6.6 0 00.6.6h18.8a.6.6 0 00.6-.6V13M2 13h20M2 13l2.872-9.572A.6.6 0 015.446 3h13.108a.6.6 0 01.574.428L22 13"
+                  stroke="#f1fa89"
+                  strokeWidth="1.98"
+                ></path>
+              </svg>{" "}
+              Projects
+            </a>
+          </li> */}
+          {/* <li>
+              <Link to="/experiences">
+                <Globe width={24} height={24} className="text-success" />{" "}
+                Experiences
+              </Link>
+            </li> */}
+          <li>
+            <a
+              href="/heroes"
+              className="btn btn-xs flex gap-2 text-xs normal-case"
+            >
+              <svg
+                width="20px"
+                height="20px"
+                strokeWidth="1.98"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="#ffb86b"
+              >
+                <path
+                  d="M8.587 8.236l2.598-5.232a.911.911 0 011.63 0l2.598 5.232 5.808.844a.902.902 0 01.503 1.542l-4.202 4.07.992 5.75c.127.738-.653 1.3-1.32.952L12 18.678l-5.195 2.716c-.666.349-1.446-.214-1.319-.953l.992-5.75-4.202-4.07a.902.902 0 01.503-1.54l5.808-.845z"
+                  stroke="#ffb86b"
+                  strokeWidth="1.98"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </svg>{" "}
+              Heroes
+            </a>
+          </li>
+          <li>
+            <a
+              href="/site-technology"
+              className="btn btn-xs flex gap-2 text-xs normal-case"
+            >
+              <svg
+                width="20px"
+                height="20px"
+                strokeWidth="1.98"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="#8be8fd"
+              >
+                <path
+                  d="M13.5 6L10 18.5M6.5 8.5L3 12l3.5 3.5M17.5 8.5L21 12l-3.5 3.5"
+                  stroke="#8be8fd"
+                  strokeWidth="1.98"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </svg>{" "}
+              Site Technology
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="flex-none lg:hidden">
         <div
           ref={dropdownRef}
           onClick={toggleMenu}
