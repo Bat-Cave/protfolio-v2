@@ -117,36 +117,52 @@ const Nav = () => {
               Resume
             </a>
           </li>
-          {/* <li>
+          <li>
             <a
-              href="/projects"
+              href="https://devbroshq.com/blog?author=user_2bdgRTgjSr6kjtVtHkrqwsCdFJx"
               className="btn btn-xs flex gap-2 text-xs normal-case"
             >
               <svg
-                width="20px"
-                height="20px"
-                strokeWidth="1.98"
+                width="24px"
+                height="24px"
                 viewBox="0 0 24 24"
+                strokeWidth="1.5"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 color="#f1fa89"
               >
                 <path
-                  d="M10 17.01l.01-.011M6 17.01l.01-.011"
+                  d="M6.81815 22L6.81819 19.143C6.66235 17.592 5.63284 16.4165 4.68213 15M14.4545 22L14.4545 20.2858C19.3636 20.2858 18.8182 14.5717 18.8182 14.5717C18.8182 14.5717 21 14.5717 21 12.286L18.8182 8.8576C18.8182 4.28632 15.1094 2.04169 11.1818 2.00068C8.98139 1.97771 7.22477 2.53124 5.91201 3.5"
                   stroke="#f1fa89"
-                  strokeWidth="1.98"
+                  strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 ></path>
                 <path
-                  d="M2 13v7.4a.6.6 0 00.6.6h18.8a.6.6 0 00.6-.6V13M2 13h20M2 13l2.872-9.572A.6.6 0 015.446 3h13.108a.6.6 0 01.574.428L22 13"
+                  d="M13 7L15 9.5L13 12"
                   stroke="#f1fa89"
-                  strokeWidth="1.98"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+                <path
+                  d="M5 7L3 9.5L5 12"
+                  stroke="#f1fa89"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+                <path
+                  d="M10 6L8 13"
+                  stroke="#f1fa89"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></path>
               </svg>{" "}
-              Projects
+              Blog
             </a>
-          </li> */}
+          </li>
           {/* <li>
               <Link to="/experiences">
                 <Globe width={24} height={24} className="text-success" />{" "}
