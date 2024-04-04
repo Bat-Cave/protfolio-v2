@@ -1,18 +1,19 @@
 import { m } from "framer-motion";
 import {
   Code,
+  Developer,
   Discord,
   Facebook,
-  GitHub,
+  Github,
   HardDrive,
   HomeSimpleDoor,
   Instagram,
   JournalPage,
-  LinkedIn,
+  Linkedin,
+  Stackoverflow,
   Star,
+  X,
 } from "iconoir-react";
-// import { ReactComponent as LinkedIn } from "../assets/linkedin.svg";
-// import { ReactComponent as GitHub } from "../assets/github.svg";
 import { ReactComponent as Codewars } from "../assets/codewars_icon.svg";
 import { ReactComponent as CssBattle } from "../assets/cssbattle_icon.svg";
 import { ReactComponent as Twitch } from "../assets/twitch.svg";
@@ -66,6 +67,15 @@ const Footer = () => {
                     href="/projects"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
+                    <Developer />
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/projects"
+                    className="text-secondary-content hover:text-secondary hover:bg-neutral"
+                  >
                     <HardDrive />
                     Projects
                   </a>
@@ -109,16 +119,16 @@ const Footer = () => {
                     target="_blank"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
-                    <GitHub /> Github
+                    <Github /> Github
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/in/richard-l-hancock"
+                    href="https://stackoverflow.com/users/20913924/rico"
                     target="_blank"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
-                    <LinkedIn /> Linkedin
+                    <Stackoverflow width={24} height={24} /> Stack Overflow
                   </a>
                 </li>
                 <li>
@@ -151,11 +161,20 @@ const Footer = () => {
               <ul className="menu menu-compact w-full p-2 rounded-box">
                 <li>
                   <a
-                    href="https://www.facebook.com/richard.l.hancock/"
+                    href="https://www.linkedin.com/in/richard-l-hancock"
                     target="_blank"
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
-                    <Facebook /> Facebook
+                    <Linkedin /> Linkedin
+                  </a>
+                </li>
+                <li>
+                  <a
+                    herf="https://twitter.com/rico_hancock42"
+                    target="_blank"
+                    className="text-secondary-content hover:text-secondary hover:bg-neutral"
+                  >
+                    <X /> Twitter
                   </a>
                 </li>
                 <li>
@@ -173,9 +192,7 @@ const Footer = () => {
                     className="text-secondary-content hover:text-secondary hover:bg-neutral"
                   >
                     <Discord />{" "}
-                    {copyDiscordStatus === "copied"
-                      ? "Copied!"
-                      : "Uncle Rico #2015"}
+                    {copyDiscordStatus === "copied" ? "Copied!" : "uncle.ri.co"}
                   </span>
                 </li>
                 <li>
