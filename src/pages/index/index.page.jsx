@@ -3,6 +3,7 @@ import Hero from "../../components/Home/Hero";
 import Howdy from "../../components/Home/Howdy";
 import TechJourney from "../../components/Home/TechJourney";
 import NotAlone from "../../components/Home/NotAlone";
+import Projects from "../../components/Home/Projects";
 
 const Page = () => {
   return (
@@ -10,6 +11,7 @@ const Page = () => {
       <Hero />
       <Howdy />
       <TechJourney />
+      <Projects />
       <NotAlone />
     </SectionWrapper>
   );

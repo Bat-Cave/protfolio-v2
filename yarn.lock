@@ -1663,10 +1663,10 @@ http-errors@2.0.0:
     statuses "2.0.1"
     toidentifier "1.0.1"
 
-iconoir-react@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/iconoir-react/-/iconoir-react-6.0.0.tgz#81ec280d16e1936f3a7eb9c21779a3d36e944891"
-  integrity sha512-riNG9dy82c+AnCskNfwqjevdnUHHZdvlepUW4bv6objKfkdKFSOelCo+zXmw2Qz2jfgXbhfKkN0txBZMZM78zg==
+iconoir-react@^7.5.0:
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/iconoir-react/-/iconoir-react-7.5.0.tgz#adc0cd1a772e5a97050a3087242df962fd253ede"
+  integrity sha512-BreNjTeCquoYCLsvM6YLai/hvVEEAUz661TkXm7Kh/YvfG0tLqdhTsvYnL4yj/owYahqtLctvVwjjEDSWZmfNw==
 
 iconoir@^6.0.0:
   version "6.0.0"

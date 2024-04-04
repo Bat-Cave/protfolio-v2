@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Layout } from "../src/components/Layout";
 import { LazyMotion, domAnimation } from "framer-motion";
-import { UseEffectScroll } from "react-use-smooth-scroll";
 import "./index.css";
 
 export { render };
@@ -11,11 +10,9 @@ async function render(pageContext) {
   const { Page, pageProps } = pageContext;
   const page = (
     <LazyMotion features={domAnimation} strict>
-      <UseEffectScroll>
-        <Layout pageContext={pageContext}>
-          <Page {...pageProps} />
-        </Layout>
-      </UseEffectScroll>
+      <Layout pageContext={pageContext}>
+        <Page {...pageProps} />
+      </Layout>
     </LazyMotion>
   );
   const container = document.getElementById("page-view");

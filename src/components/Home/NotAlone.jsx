@@ -62,15 +62,10 @@ const NotAlone = () => {
       name: "flexboxfroggy.com",
     },
     {
-      url: "https://pbs.twimg.com/profile_images/1491038861224517637/s-H1KgWO_400x400.png",
-      name: "fontawesome.com",
-    },
-    {
       url: "https://pbs.twimg.com/profile_images/1114446136302084096/BIu19jPP_400x400.png",
       name: "cssbattle.dev",
     },
   ];
-  const rows = 3;
 
   const getShuffledArray = (array) => {
     let currentIndex = array.length,
@@ -138,8 +133,8 @@ const NotAlone = () => {
           <p>
             From my first program to now, I've had help along the way. We're
             blessed to live in a time when there is so much information at our
-            fingertips. I'm grateful for the websites and developers who create
-            content to help others!
+            fingertips. I'm grateful for the websites and developers who have
+            created content that have helped me learn how to program!
           </p>
           <br />
           <a href="/heroes" className="btn btn-primary max-w-[300px]">
